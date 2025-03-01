@@ -3,44 +3,29 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: fanumber-Regular;
+  font-family: YekanBak-Regular;
   font-weight: 400;
   src: url('../src/fonts/YekanBakhFaNum-Regular.woff') format("woff");
 }
 @font-face {
-  font-family: fanumber-Bold;
-  font-weight: 400;
+  font-family: YekanBak-SemiBold;
+  font-weight: 600;
+  src: url('../src/fonts/YekanBakhFaNum-SemiBold.woff') format("woff");
+}
+@font-face {
+  font-family: YekanBak-Bold;
+  font-weight: 700;
   src: url('../src/fonts/YekanBakhFaNum-Bold.woff') format("woff");
 }
 @font-face {
-  font-family: payda-Regular;
-  font-weight: 400;
-  src: url('../src/fonts/payda/woff/PeydaWeb-Regular.woff') format("woff");
-}
-@font-face {
-  font-family: payda-Medium;
-  font-weight: 500;
-  src: url('../src/fonts/payda/woff/PeydaWeb-Medium.woff') format("woff");
-}
-@font-face {
-  font-family: payda-SemiBold;
-  font-weight: 600;
-  src: url('../src/fonts/payda/woff/PeydaWeb-SemiBold.woff') format("woff");
-}
-@font-face {
-  font-family: payda-Bold;
-  font-weight: 700;
-  src: url('../src/fonts/payda/woff/PeydaWeb-Bold.woff') format("woff");
-}
-@font-face {
-  font-family: payda-ExtraBold;
+  font-family: YekanBak-ExtraBold;
   font-weight: 800;
-  src: url('../src/fonts/payda/woff/PeydaWeb-ExtraBold.woff') format("woff");
+  src: url('../src/fonts/YekanBakhFaNum-ExtraBold.woff') format("woff");
 }
 @font-face {
-  font-family: payda-Black;
+  font-family: YekanBak-Black;
   font-weight: 900;
-  src: url('../src/fonts/payda/woff/PeydaWeb-Black.woff') format("woff");
+  src: url('../src/fonts/YekanBakhFaNum-Black.woff') format("woff");
 }
 @font-face {
   font-family: Montserrat-Regular;
@@ -52,45 +37,36 @@
 
   src: url('../src/fonts/Montserrat-Bold.ttf') format("trueType");
 }
-.font-faNumRegular{
-  font-weight: 400;
-  @apply ltr:font-MontserratRegular;
-  
-}
-.font-faNumBold{
-  font-weight: 700;
-  @apply ltr:font-MontserratBold;
-}
 .font-normal{
   font-weight: 400;
-  @apply rtl:font-paydaRegular ltr:font-MontserratRegular;
+  @apply rtl:font-yekanBakhRegular ltr:font-MontserratRegular;
 }
 .font-medium{
   font-weight: 500;
-  @apply rtl:font-paydaMedium;
+  @apply rtl:font-yekanBakhMedium;
 }
 .font-semibold{
   font-weight: 600;
-  @apply rtl:font-paydaSemiBold ltr:font-MontserratBold;
+  @apply rtl:font-yekanBakhSemiBold ltr:font-MontserratBold;
 }
 .font-bold{
   font-weight: 700;
-  @apply rtl:font-paydaBold ltr:font-MontserratBold;
+  @apply rtl:font-yekanBakhBold ltr:font-MontserratBold;
 }
 .font-extrabold{
   font-weight: 800;
-  @apply rtl:font-paydaExtraBold ltr:font-MontserratBold;
+  @apply rtl:font-yekanBakhExtraBold ltr:font-MontserratBold;
 }
 .font-black{
   font-weight: 900;
-  @apply rtl:font-paydaBlack ltr:font-MontserratBold;
+  @apply rtl:font-yekanBakhBlack ltr:font-MontserratBold;
 }
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: payda-Regular !important;
+  font-family: YekanBak-Regular!important;
   user-select: none;
   overflow-x: hidden;
   background-color: #F5F5F5;
@@ -128,6 +104,12 @@ linear-gradient(180deg, #069CDF 42.79%, rgba(6, 156, 223, 0.48) 126.57%);
 }
 .shadow-1{
   box-shadow: 0px 0px 199.4px 0px #0000001A;
+}
+.shadow-2{
+  box-shadow: 12px 5px 20.5px 7px rgba(0, 77, 139, 0.47);
+}
+.shadow-3{
+  box-shadow: 0px 0px 39.4px 0px #004D8B61;
 }
 .ltrReverse{
   @apply ltr:[transform:rotateY(180deg)];
