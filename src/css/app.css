@@ -87,7 +87,7 @@ a {
 .transition {
   @apply transition-all duration-300;
 }
-.overlay{
+.overlay,.overlay2{
   position: relative;
 }
 .overlay::after{
@@ -99,12 +99,27 @@ a {
   background: linear-gradient(0deg, rgba(6, 156, 223, 0.36), rgba(6, 156, 223, 0.36)),
 linear-gradient(180deg, #069CDF 42.79%, rgba(6, 156, 223, 0.48) 126.57%);
 }
+.overlay2::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(6, 156, 223, 0.36), rgba(6, 156, 223, 0.36)),
+  linear-gradient(180deg, #069CDF 24.25%, rgba(6, 156, 223, 0.48) 67.24%);
+}
 .bg-gradient-1{
   background: linear-gradient(90deg, #069CDF 4.79%, rgba(0, 77, 139, 0.11) 100%);
 }
+.bg-gradient-2{
+  background: linear-gradient(184.12deg, #FFFFFF 3.36%, #F5F5F5 96.71%);
+}
+.bg-img-1{
+  background-image: url('../src/img/bg.png');
+  background-size: 100% 100%;
+}
 .shadow-1{
   box-shadow: 0px 0px 199.4px 0px #0000001A;
-
 }
 .shadow-2{
   box-shadow: 12px 5px 20.5px 7px rgba(0, 77, 139, 0.47);
@@ -117,6 +132,9 @@ linear-gradient(180deg, #069CDF 42.79%, rgba(6, 156, 223, 0.48) 126.57%);
 }
 .shadow-5{
   box-shadow: 0px 0px 199.4px 0px #00000070;
+}
+.shadow-6{
+  box-shadow: 0px 0px 39.28px 0px #00E2AC61;
 }
 .bg-blur-1{
   background-color: #78787859;
