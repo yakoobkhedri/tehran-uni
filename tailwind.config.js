@@ -25,6 +25,9 @@ module.exports = {
         MontserratRegular: "Montserrat-Regular",
         MontserratBold: "Montserrat-Bold",
       },
+      padding:{
+        'custom':'calc((100% - 1392px) / 2)'
+       },
       maxWidth:{
         'content':'1392px',
       },
