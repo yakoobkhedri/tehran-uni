@@ -87,7 +87,7 @@ a {
 .transition {
   @apply transition-all duration-300;
 }
-.overlay,.overlay2{
+.overlay,.overlay2,.overlay3{
   position: relative;
 }
 .overlay::after{
@@ -108,6 +108,16 @@ linear-gradient(180deg, #069CDF 42.79%, rgba(6, 156, 223, 0.48) 126.57%);
   background: linear-gradient(0deg, rgba(6, 156, 223, 0.36), rgba(6, 156, 223, 0.36)),
   linear-gradient(180deg, #069CDF 24.25%, rgba(6, 156, 223, 0.48) 67.24%);
 }
+.overlay3::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  border-radius: 30px;
+  background: linear-gradient(0deg, rgba(6, 156, 223, 0.36), rgba(6, 156, 223, 0.36)),
+linear-gradient(180deg, #069CDF 27.93%, rgba(6, 156, 223, 0.48) 77.44%);
+}
 .bg-gradient-1{
   background: linear-gradient(90deg, #069CDF 4.79%, rgba(0, 77, 139, 0.11) 100%);
 }
@@ -116,6 +126,9 @@ linear-gradient(180deg, #069CDF 42.79%, rgba(6, 156, 223, 0.48) 126.57%);
 }
 .bg-gradient-3{
   background: linear-gradient(90deg, #FFFFFF 39.68%, #F1F1F1 100%);
+}
+.bg-gradient-4{
+  background: linear-gradient(180deg, rgba(1, 84, 245, 0.18) -11.31%, rgba(255, 255, 255, 0.18) 100%);
 }
 .bg-img-1{
   background-image: url('../src/img/bg.png');

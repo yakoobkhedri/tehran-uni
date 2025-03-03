@@ -30,3 +30,17 @@ var courses = new Swiper(".courses", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+var govahi = new Swiper(".govahi", {
+  slidesPerView: 1,
+  loop:true,
+  spaceBetween: 22,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
