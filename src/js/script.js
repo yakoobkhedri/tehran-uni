@@ -36,7 +36,26 @@ var govahi = new Swiper(".govahi", {
   loop:true,
   spaceBetween: 22,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination2",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+var testimonials = new Swiper(".testimonials", {
+  slidesPerView: 1,
+  loop:true,
+  spaceBetween: 36,
+  breakpoints: {
+    1200: {
+      slidesPerView: 4,
+    }
+  },
+  pagination: {
+    el: ".swiper-pagination3",
     clickable: true,
   },
   navigation: {
