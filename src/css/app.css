@@ -161,6 +161,10 @@ linear-gradient(180deg, #069CDF 27.93%, rgba(6, 156, 223, 0.48) 77.44%);
 .shadow-9{
   box-shadow: 0px 0px 113.18px 0px #0000001A;
 }
+.shadow-10{
+  box-shadow: 0px -3.99px 95.71px -14.96px #0000001A;
+
+}
 .bg-blur-1{
   background-color: #78787859;
   backdrop-filter: blur(13.260251998901367px)
