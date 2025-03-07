@@ -721,6 +721,10 @@ video {
   top: auto;
 }
 
+.top-5 {
+  top: 1.25rem;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -747,6 +751,10 @@ video {
 
 .z-30 {
   z-index: 30;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .col-span-3 {
@@ -804,6 +812,11 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .my-\[18px\] {
   margin-top: 18px;
   margin-bottom: 18px;
@@ -812,11 +825,6 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
 .-mb-5 {
@@ -1086,6 +1094,14 @@ video {
   height: 100%;
 }
 
+.h-0 {
+  height: 0px;
+}
+
+.h-0\.5 {
+  height: 0.125rem;
+}
+
 .\!w-\[90px\] {
   width: 90px !important;
 }
@@ -1112,6 +1128,10 @@ video {
 
 .w-9 {
   width: 2.25rem;
+}
+
+.w-\[150px\] {
+  width: 150px;
 }
 
 .w-\[151px\] {
@@ -1242,10 +1262,6 @@ video {
   align-items: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
-}
-
 .justify-end {
   justify-content: flex-end;
 }
@@ -1334,6 +1350,10 @@ video {
   border-radius: 1rem;
 }
 
+.rounded-\[10px\] {
+  border-radius: 10px;
+}
+
 .rounded-\[20px\] {
   border-radius: 20px;
 }
@@ -1378,10 +1398,6 @@ video {
   border-radius: 0.75rem;
 }
 
-.rounded-\[10px\] {
-  border-radius: 10px;
-}
-
 .rounded-b-2xl {
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -1420,6 +1436,18 @@ video {
   border-width: 0px;
 }
 
+.border-\[3px\] {
+  border-width: 3px;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.border-\[3\.5px\] {
+  border-width: 3.5px;
+}
+
 .border-t-2 {
   border-top-width: 2px;
 }
@@ -1450,6 +1478,11 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(6 156 223 / var(--tw-border-opacity));
+}
+
 .bg-\[\#00000008\] {
   background-color: #00000008;
 }
@@ -1471,6 +1504,11 @@ video {
 .bg-\[\#EBEBEB\] {
   --tw-bg-opacity: 1;
   background-color: rgb(235 235 235 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F0F0F0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 240 240 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#F5F5F5\] {
@@ -1498,18 +1536,26 @@ video {
   background-color: rgb(0 77 139 / var(--tw-bg-opacity));
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#F0F0F0\] {
+.bg-yellow-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(240 240 240 / var(--tw-bg-opacity));
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
-.bg-transparent {
-  background-color: transparent;
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .p-1 {
@@ -1548,6 +1594,14 @@ video {
   padding: 26px;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
+.p-0\.5 {
+  padding: 0.125rem;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1561,6 +1615,16 @@ video {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
 }
 
 .px-3 {
@@ -1638,19 +1702,9 @@ video {
   padding-bottom: 14px;
 }
 
-.px-\[10px\] {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.px-2\.5 {
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
+.px-\[71px\] {
+  padding-left: 71px;
+  padding-right: 71px;
 }
 
 .pb-0 {
@@ -1685,6 +1739,10 @@ video {
   padding-bottom: 1.75rem;
 }
 
+.pb-\[110px\] {
+  padding-bottom: 110px;
+}
+
 .pb-\[68px\] {
   padding-bottom: 68px;
 }
@@ -1715,14 +1773,6 @@ video {
 
 .pt-\[92px\] {
   padding-top: 92px;
-}
-
-.pb-\[116px\] {
-  padding-bottom: 116px;
-}
-
-.pb-\[110px\] {
-  padding-bottom: 110px;
 }
 
 .text-center {
@@ -1803,6 +1853,10 @@ video {
 
 .font-thin {
   font-weight: 100;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .leading-10 {
@@ -2215,6 +2269,10 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
 .swiper-pagination-bullet-active{
   width: 34px;
   background-color: white;
+}
+
+.hover\:font-black:hover {
+  font-weight: 900;
 }
 
 .hover\:text-primary:hover {
