@@ -191,6 +191,40 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
   background-color: #78787859;
   backdrop-filter: blur(13.260251998901367px)
 }
+/* instagram story */
+.full-screen{
+  position: fixed;
+  background-color: red;
+  inset: 0;
+  z-index: 30;
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s;
+}
+.full-screen.active{
+  opacity: 100%;
+  visibility: visible;
+}
+.time-line{
+  height: 2px;
+  width: 100%;
+  position: relative;
+  top: 20px;
+  border-radius: 5px;
+  background-color: white;
+  animation: timeline 3s linear forwards;
+}
+@keyframes timeline {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
+/*  */
 .ltrReverse{
   @apply ltr:[transform:rotateY(180deg)];
 }
