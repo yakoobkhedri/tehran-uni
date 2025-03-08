@@ -1937,7 +1937,23 @@ video {
 }
 
 @font-face {
-  font-family: YekanBak-Regular;
+  font-family: YekanBakhFaNum-Thin;
+
+  font-weight: 100;
+
+  src: url('../src/fonts/YekanBakhFaNum-Thin.woff') format("woff");
+}
+
+@font-face {
+  font-family: YekanBakhFaNum-Light;
+
+  font-weight: 300;
+
+  src: url('../src/fonts/YekanBakhFaNum-Light.woff') format("woff");
+}
+
+@font-face {
+  font-family: YekanBakhFaNum-Regular;
 
   font-weight: 400;
 
@@ -1945,7 +1961,7 @@ video {
 }
 
 @font-face {
-  font-family: YekanBak-SemiBold;
+  font-family: YekanBakhFaNum-SemiBold;
 
   font-weight: 600;
 
@@ -1953,7 +1969,7 @@ video {
 }
 
 @font-face {
-  font-family: YekanBak-Bold;
+  font-family: YekanBakhFaNum-Bold;
 
   font-weight: 700;
 
@@ -1961,7 +1977,7 @@ video {
 }
 
 @font-face {
-  font-family: YekanBak-ExtraBold;
+  font-family: YekanBakhFaNum-ExtraBold;
 
   font-weight: 800;
 
@@ -1969,11 +1985,19 @@ video {
 }
 
 @font-face {
-  font-family: YekanBak-Black;
+  font-family: YekanBakhFaNum-Black;
 
   font-weight: 900;
 
   src: url('../src/fonts/YekanBakhFaNum-Black.woff') format("woff");
+}
+
+@font-face {
+  font-family: YekanBakhFaNum-ExtraBlack;
+
+  font-weight: 950;
+
+  src: url('../src/fonts/YekanBakhFaNum-ExtraBlack.woff') format("woff");
 }
 
 @font-face {
@@ -1997,7 +2021,7 @@ video {
 }
 
 :is([dir="rtl"] .font-normal) {
-  font-family: yekanBakh-Regular;
+  font-family: YekanBakhFaNum-Regular;
 }
 
 .font-medium{
@@ -2005,7 +2029,7 @@ video {
 }
 
 :is([dir="rtl"] .font-medium) {
-  font-family: yekanBakh-Medium;
+  font-family: YekanBakhFaNum-Medium;
 }
 
 .font-semibold{
@@ -2017,7 +2041,7 @@ video {
 }
 
 :is([dir="rtl"] .font-semibold) {
-  font-family: yekanBakh-SemiBold;
+  font-family: YekanBakhFaNum-SemiBold;
 }
 
 .font-bold{
@@ -2029,7 +2053,7 @@ video {
 }
 
 :is([dir="rtl"] .font-bold) {
-  font-family: yekanBakh-Bold;
+  font-family: YekanBakhFaNum-Bold;
 }
 
 .font-extrabold{
@@ -2041,7 +2065,7 @@ video {
 }
 
 :is([dir="rtl"] .font-extrabold) {
-  font-family: yekanBakh-ExtraBold;
+  font-family: YekanBakhFaNum-ExtraBold;
 }
 
 .font-black{
@@ -2053,7 +2077,7 @@ video {
 }
 
 :is([dir="rtl"] .font-black) {
-  font-family: yekanBakh-Black;
+  font-family: YekanBakhFaNum-Black;
 }
 
 html {
@@ -2061,7 +2085,7 @@ html {
 }
 
 body {
-  font-family: YekanBak-Regular!important;
+  font-family: YekanBakhFaNum-Regular!important;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;

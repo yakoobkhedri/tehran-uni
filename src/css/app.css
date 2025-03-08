@@ -3,29 +3,44 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: YekanBak-Regular;
+  font-family: YekanBakhFaNum-Thin;
+  font-weight: 100;
+  src: url('../src/fonts/YekanBakhFaNum-Thin.woff') format("woff");
+}
+@font-face {
+  font-family: YekanBakhFaNum-Light;
+  font-weight: 300;
+  src: url('../src/fonts/YekanBakhFaNum-Light.woff') format("woff");
+}
+@font-face {
+  font-family: YekanBakhFaNum-Regular;
   font-weight: 400;
   src: url('../src/fonts/YekanBakhFaNum-Regular.woff') format("woff");
 }
 @font-face {
-  font-family: YekanBak-SemiBold;
+  font-family: YekanBakhFaNum-SemiBold;
   font-weight: 600;
   src: url('../src/fonts/YekanBakhFaNum-SemiBold.woff') format("woff");
 }
 @font-face {
-  font-family: YekanBak-Bold;
+  font-family: YekanBakhFaNum-Bold;
   font-weight: 700;
   src: url('../src/fonts/YekanBakhFaNum-Bold.woff') format("woff");
 }
 @font-face {
-  font-family: YekanBak-ExtraBold;
+  font-family: YekanBakhFaNum-ExtraBold;
   font-weight: 800;
   src: url('../src/fonts/YekanBakhFaNum-ExtraBold.woff') format("woff");
 }
 @font-face {
-  font-family: YekanBak-Black;
+  font-family: YekanBakhFaNum-Black;
   font-weight: 900;
   src: url('../src/fonts/YekanBakhFaNum-Black.woff') format("woff");
+}
+@font-face {
+  font-family: YekanBakhFaNum-ExtraBlack;
+  font-weight: 950;
+  src: url('../src/fonts/YekanBakhFaNum-ExtraBlack.woff') format("woff");
 }
 @font-face {
   font-family: Montserrat-Regular;
@@ -66,7 +81,7 @@ html {
 }
 
 body {
-  font-family: YekanBak-Regular!important;
+  font-family: YekanBakhFaNum-Regular!important;
   user-select: none;
   overflow-x: hidden;
   background-color: #F5F5F5;

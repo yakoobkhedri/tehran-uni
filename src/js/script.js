@@ -3,7 +3,7 @@
 var banner = new Swiper(".banner", {
   loop: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination1",
     clickable: true,
   },
   navigation: {
@@ -55,7 +55,7 @@ var testimonials = new Swiper(".testimonials", {
     }
   },
   pagination: {
-    el: ".swiper-pagination3",
+    el: ".swiper-pagination4",
     clickable: true,
   },
   navigation: {
