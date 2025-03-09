@@ -162,6 +162,15 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
   height: 100%;
   border-radius: 30px;
 }
+.overlay6{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: linear-gradient(180deg, rgba(1, 77, 139, 0.36), rgba(1, 77, 139, 0.36)),
+linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
+}
 .bg-gradient-1{
   background: linear-gradient(90deg, #069CDF 4.79%, rgba(0, 77, 139, 0.11) 100%);
 }
