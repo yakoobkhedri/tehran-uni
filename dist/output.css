@@ -741,8 +741,24 @@ video {
   top: 68px;
 }
 
+.top-\[77px\] {
+  top: 77px;
+}
+
 .top-auto {
   top: auto;
+}
+
+.-top-\[6px\] {
+  top: -6px;
+}
+
+.-top-3 {
+  top: -0.75rem;
+}
+
+.-top-\[39px\] {
+  top: -39px;
 }
 
 .-z-0 {
@@ -2391,6 +2407,10 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
   background-color: rgb(0 77 139 / var(--tw-bg-opacity));
 }
 
+.group:hover .group-hover\:fill-primary {
+  fill: #069CDF;
+}
+
 .group:hover .group-hover\:fill-secondary {
   fill: #004D8B;
 }
@@ -2413,6 +2433,10 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
 
 :is([dir="ltr"] .ltr\:-left-\[48px\]) {
   left: -48px;
+}
+
+:is([dir="ltr"] .ltr\:-right-4) {
+  right: -1rem;
 }
 
 :is([dir="ltr"] .ltr\:left-2) {
@@ -2483,6 +2507,10 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
   right: 4%;
 }
 
+:is([dir="ltr"] .ltr\:right-4) {
+  right: 1rem;
+}
+
 :is([dir="ltr"] .ltr\:ml-3) {
   margin-left: 0.75rem;
 }
@@ -2497,6 +2525,11 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
 
 :is([dir="ltr"] .ltr\:mr-0) {
   margin-right: 0px;
+}
+
+:is([dir="ltr"] .ltr\:rotate-90) {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 :is([dir="ltr"] .ltr\:rounded-l-\[29px\]) {
@@ -2535,6 +2568,10 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
 
 :is([dir="rtl"] .rtl\:\!right-auto) {
   right: auto !important;
+}
+
+:is([dir="rtl"] .rtl\:-left-4) {
+  left: -1rem;
 }
 
 :is([dir="rtl"] .rtl\:-right-11) {
@@ -2613,12 +2650,21 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
   right: 7.7%;
 }
 
+:is([dir="rtl"] .rtl\:left-4) {
+  left: 1rem;
+}
+
 :is([dir="rtl"] .rtl\:mr-3) {
   margin-right: 0.75rem;
 }
 
 :is([dir="rtl"] .rtl\:mr-auto) {
   margin-right: auto;
+}
+
+:is([dir="rtl"] .rtl\:-rotate-90) {
+  --tw-rotate: -90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 :is([dir="rtl"] .rtl\:rounded-l-\[29px\]) {
