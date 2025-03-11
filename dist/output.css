@@ -645,6 +645,10 @@ video {
   top: -3rem;
 }
 
+.-top-20 {
+  top: -5rem;
+}
+
 .-top-3 {
   top: -0.75rem;
 }
@@ -661,16 +665,24 @@ video {
   top: -1.75rem;
 }
 
-.-top-8 {
-  top: -2rem;
-}
-
 .-top-9 {
   top: -2.25rem;
 }
 
+.-top-\[22px\] {
+  top: -22px;
+}
+
+.-top-\[35px\] {
+  top: -35px;
+}
+
 .-top-\[39px\] {
   top: -39px;
+}
+
+.-top-\[49px\] {
+  top: -49px;
 }
 
 .-top-\[57px\] {
@@ -679,10 +691,6 @@ video {
 
 .-top-\[59px\] {
   top: -59px;
-}
-
-.-top-\[7px\] {
-  top: -7px;
 }
 
 .bottom-0 {
@@ -763,10 +771,6 @@ video {
 
 .top-auto {
   top: auto;
-}
-
-.-top-20 {
-  top: -5rem;
 }
 
 .-z-0 {
@@ -1144,6 +1148,10 @@ video {
 
 .h-\[591px\] {
   height: 591px;
+}
+
+.h-\[81px\] {
+  height: 81px;
 }
 
 .h-full {
@@ -1778,10 +1786,6 @@ video {
   padding-bottom: 68px;
 }
 
-.pt-11 {
-  padding-top: 2.75rem;
-}
-
 .pt-12 {
   padding-top: 3rem;
 }
@@ -1802,20 +1806,16 @@ video {
   padding-top: 1.25rem;
 }
 
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
 .pt-8 {
   padding-top: 2rem;
 }
 
 .pt-9 {
   padding-top: 2.25rem;
-}
-
-.pt-7 {
-  padding-top: 1.75rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
 }
 
 .text-center {
@@ -2272,6 +2272,16 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
 linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
 }
 
+.lineafter::after{
+  content: '';
+  position: absolute;
+  background-color: #f5f5f5;
+  width: 2px;
+  height: 100%;
+  right: 0px;
+  top: -6px;
+}
+
 .bg-gradient-1{
   background: linear-gradient(90deg, #069CDF 4.79%, rgba(0, 77, 139, 0.11) 100%);
 }
@@ -2422,6 +2432,11 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
   color: rgb(6 156 223 / var(--tw-text-opacity));
 }
 
+.hover\:text-secondary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 77 139 / var(--tw-text-opacity));
+}
+
 .group:hover .group-hover\:bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(0 77 139 / var(--tw-bg-opacity));
@@ -2475,10 +2490,6 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
   left: 0.5rem;
 }
 
-:is([dir="ltr"] .ltr\:left-\[2\.34\%\]) {
-  left: 2.34%;
-}
-
 :is([dir="ltr"] .ltr\:left-\[25\%\]) {
   left: 25%;
 }
@@ -2491,10 +2502,6 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
   left: 3%;
 }
 
-:is([dir="ltr"] .ltr\:left-\[3\.9\%\]) {
-  left: 3.9%;
-}
-
 :is([dir="ltr"] .ltr\:left-\[4\%\]) {
   left: 4%;
 }
@@ -2503,8 +2510,8 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
   left: 4.5%;
 }
 
-:is([dir="ltr"] .ltr\:left-\[49\.7\%\]) {
-  left: 49.7%;
+:is([dir="ltr"] .ltr\:left-\[46px\]) {
+  left: 46px;
 }
 
 :is([dir="ltr"] .ltr\:left-\[6\%\]) {
@@ -2513,10 +2520,6 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
 
 :is([dir="ltr"] .ltr\:left-\[7\%\]) {
   left: 7%;
-}
-
-:is([dir="ltr"] .ltr\:left-\[7\.7\%\]) {
-  left: 7.7%;
 }
 
 :is([dir="ltr"] .ltr\:right-0) {
@@ -2537,10 +2540,6 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
 
 :is([dir="ltr"] .ltr\:right-\[4\%\]) {
   right: 4%;
-}
-
-:is([dir="ltr"] .ltr\:left-\[46px\]) {
-  left: 46px;
 }
 
 :is([dir="ltr"] .ltr\:ml-3) {
@@ -2658,10 +2657,6 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
   right: 0.5rem;
 }
 
-:is([dir="rtl"] .rtl\:right-\[2\.34\%\]) {
-  right: 2.34%;
-}
-
 :is([dir="rtl"] .rtl\:right-\[25\%\]) {
   right: 25%;
 }
@@ -2674,10 +2669,6 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
   right: 3%;
 }
 
-:is([dir="rtl"] .rtl\:right-\[3\.9\%\]) {
-  right: 3.9%;
-}
-
 :is([dir="rtl"] .rtl\:right-\[4\%\]) {
   right: 4%;
 }
@@ -2686,8 +2677,8 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
   right: 4.5%;
 }
 
-:is([dir="rtl"] .rtl\:right-\[49\.7\%\]) {
-  right: 49.7%;
+:is([dir="rtl"] .rtl\:right-\[46px\]) {
+  right: 46px;
 }
 
 :is([dir="rtl"] .rtl\:right-\[6\%\]) {
@@ -2696,14 +2687,6 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
 
 :is([dir="rtl"] .rtl\:right-\[7\%\]) {
   right: 7%;
-}
-
-:is([dir="rtl"] .rtl\:right-\[7\.7\%\]) {
-  right: 7.7%;
-}
-
-:is([dir="rtl"] .rtl\:right-\[46px\]) {
-  right: 46px;
 }
 
 :is([dir="rtl"] .rtl\:ml-\[50px\]) {
