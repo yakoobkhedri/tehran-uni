@@ -621,8 +621,16 @@ video {
   top: auto !important;
 }
 
+.-bottom-\[17px\] {
+  bottom: -17px;
+}
+
 .-bottom-\[18px\] {
   bottom: -18px;
+}
+
+.-bottom-\[2px\] {
+  bottom: -2px;
 }
 
 .-bottom-\[50px\] {
@@ -667,6 +675,18 @@ video {
 
 .-top-9 {
   top: -2.25rem;
+}
+
+.-top-\[1\.5px\] {
+  top: -1.5px;
+}
+
+.-top-\[17px\] {
+  top: -17px;
+}
+
+.-top-\[1px\] {
+  top: -1px;
 }
 
 .-top-\[22px\] {
@@ -1090,6 +1110,10 @@ video {
   height: 2.25rem;
 }
 
+.h-\[1\.5px\] {
+  height: 1.5px;
+}
+
 .h-\[175px\] {
   height: 175px;
 }
@@ -1150,6 +1174,10 @@ video {
   height: 591px;
 }
 
+.h-\[6px\] {
+  height: 6px;
+}
+
 .h-\[81px\] {
   height: 81px;
 }
@@ -1178,6 +1206,10 @@ video {
   width: 4rem;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
 .w-5 {
   width: 1.25rem;
 }
@@ -1188,6 +1220,10 @@ video {
 
 .w-9 {
   width: 2.25rem;
+}
+
+.w-\[14px\] {
+  width: 14px;
 }
 
 .w-\[150px\] {
@@ -1574,6 +1610,11 @@ video {
   background-color: rgb(235 235 235 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#f5f5f5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(6 156 223 / var(--tw-bg-opacity));
@@ -1595,6 +1636,14 @@ video {
 
 .fill-secondary {
   fill: #004D8B;
+}
+
+.fill-white {
+  fill: #fff;
+}
+
+.stroke-\[\#00000069\] {
+  stroke: #00000069;
 }
 
 .p-0 {
@@ -2303,6 +2352,10 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
   background-size: 100% 100%;
 }
 
+.drop-shadow-1{
+  filter: drop-shadow(0px 0px 200px #0000001A);
+}
+
 .shadow-1{
   box-shadow: 0px 0px 199.4px 0px #0000001A;
 }
@@ -2490,6 +2543,14 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
   left: 0.5rem;
 }
 
+:is([dir="ltr"] .ltr\:left-\[15\%\]) {
+  left: 15%;
+}
+
+:is([dir="ltr"] .ltr\:left-\[18\%\]) {
+  left: 18%;
+}
+
 :is([dir="ltr"] .ltr\:left-\[25\%\]) {
   left: 25%;
 }
@@ -2534,6 +2595,22 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
   right: 0.625rem;
 }
 
+:is([dir="ltr"] .ltr\:right-\[15\%\]) {
+  right: 15%;
+}
+
+:is([dir="ltr"] .ltr\:right-\[16\%\]) {
+  right: 16%;
+}
+
+:is([dir="ltr"] .ltr\:right-\[18\%\]) {
+  right: 18%;
+}
+
+:is([dir="ltr"] .ltr\:right-\[19\%\]) {
+  right: 19%;
+}
+
 :is([dir="ltr"] .ltr\:right-\[30\.3\%\]) {
   right: 30.3%;
 }
@@ -2560,6 +2637,10 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
 
 :is([dir="ltr"] .ltr\:mr-\[50px\]) {
   margin-right: 50px;
+}
+
+:is([dir="ltr"] .ltr\:-mr-\[61px\]) {
+  margin-right: -61px;
 }
 
 :is([dir="ltr"] .ltr\:rotate-90) {
@@ -2595,6 +2676,10 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
 
 :is([dir="ltr"] .ltr\:pl-\[115px\]) {
   padding-left: 115px;
+}
+
+:is([dir="ltr"] .ltr\:pr-3) {
+  padding-right: 0.75rem;
 }
 
 :is([dir="rtl"] .rtl\:\!left-0) {
@@ -2645,6 +2730,22 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
   left: 0.625rem;
 }
 
+:is([dir="rtl"] .rtl\:left-\[15\%\]) {
+  left: 15%;
+}
+
+:is([dir="rtl"] .rtl\:left-\[16\%\]) {
+  left: 16%;
+}
+
+:is([dir="rtl"] .rtl\:left-\[18\%\]) {
+  left: 18%;
+}
+
+:is([dir="rtl"] .rtl\:left-\[19\%\]) {
+  left: 19%;
+}
+
 :is([dir="rtl"] .rtl\:left-\[30\.3\%\]) {
   left: 30.3%;
 }
@@ -2655,6 +2756,14 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
 
 :is([dir="rtl"] .rtl\:right-2) {
   right: 0.5rem;
+}
+
+:is([dir="rtl"] .rtl\:right-\[15\%\]) {
+  right: 15%;
+}
+
+:is([dir="rtl"] .rtl\:right-\[18\%\]) {
+  right: 18%;
 }
 
 :is([dir="rtl"] .rtl\:right-\[25\%\]) {
@@ -2701,6 +2810,10 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
   margin-right: auto;
 }
 
+:is([dir="rtl"] .rtl\:-ml-\[61px\]) {
+  margin-left: -61px;
+}
+
 :is([dir="rtl"] .rtl\:-rotate-180) {
   --tw-rotate: -180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2728,6 +2841,10 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
 
 :is([dir="rtl"] .rtl\:rounded-tl-none) {
   border-top-left-radius: 0px;
+}
+
+:is([dir="rtl"] .rtl\:pl-3) {
+  padding-left: 0.75rem;
 }
 
 :is([dir="rtl"] .rtl\:pr-10) {
