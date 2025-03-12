@@ -81,13 +81,18 @@
         <div class="time-line h-0.5 w-full relative top-5 rounded-md"></div>
       </div>
       <div class="max-w-content mx-auto px-4">
-        <div class="stories rounded-[30px] text-center bg-white px-[71px] py-2 flex items-center justify-center gap-10">
-         <!-- <div class="cursor-pointer story">
-          <div class="bg-white rounded-full overflow-hidden mx-auto w-16 h-16 p-0.5 border-[3.5px] border-primary">
-            <img alt="img" src="../img/image (4).png" class="w-full h-full rounded-ful">
+        <div class="relative">
+          <svg class="absolute rotate-180 inset-x-0 mx-auto -top-5 z-2" width="48" height="28" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="white"></path>
+            </svg>
+          <div class="stories relative z-4 rounded-[30px] text-center bg-white px-[71px] py-2 flex items-center justify-center gap-10">
+           <!-- <div class="cursor-pointer story">
+            <div class="bg-white rounded-full overflow-hidden mx-auto w-16 h-16 p-0.5 border-[3.5px] border-primary">
+              <img alt="img" src="../img/image (4).png" class="w-full h-full rounded-ful">
+            </div>
+             <p class="text-xs text-black font-bold mt-2">دوره مدیریت تجربه مشتری</p>
+           </div> -->
           </div>
-           <p class="text-xs text-black font-bold mt-2">دوره مدیریت تجربه مشتری</p>
-         </div> -->
         </div>
       </div>
     </section>
@@ -285,7 +290,7 @@
      </div>
    </section>
 
-   <section class="mt-20">
+   <section class="mt-20 relative z-1">
     <div class="max-w-content mx-auto px-4 flex items-center">
       <div class="w-[17px] h-[349px] rtl:rounded-r-[29px] ltr:rounded-l-[29px] my-10 shadow-1 bg-[#00000008]"></div>
       <div class="w-5 h-[393px] rtl:rounded-r-[29px] ltr:rounded-l-[29px] my-[18px] shadow-1 bg-white"></div>
@@ -393,7 +398,7 @@
           <div class="flex items-start gap-5">
             <img alt="img" src="../img/Shape.png" class="mt-3">
             <div>
-              <p class="text-[#a4a4a4] leading-10 mt-4">شما می‌توانید جهت دریافت مشاوره پیرامون دوره‌ها، همه روزه (حتی جمعه‌ها) از ساعت ۹ صبح الی ۵ عصر با شماره تلفن ۰۲۱-<span class="font-black text-[30px] text-[black]">۸۸۳۳۳۱۱۷</span> تماس حاصل نمایید و یا با پر کردن فرم زیر، منتظر تماس کارشناسان آموزش باشید.</p>
+              <p class="text-[#a4a4a4] leading-10 mt-4">شما می‌توانید جهت دریافت مشاوره پیرامون دوره‌ها، همه روزه (حتی جمعه‌ها) از ساعت ۹ صبح الی ۵ عصر با شماره تلفن <span class="text-[black]"><span>۰۲۱-</span><span class="font-black text-[30px] rtl:ml-1 ltr:mr-1">۸۸۳۳۳۱۱۷</span><span class="text-[#a4a4a4]">تماس حاصل نمایید و یا با پر کردن فرم زیر، منتظر تماس کارشناسان آموزش باشید.</span></p>
             </div>
           </div>
           <div class="mt-8 flex items-center gap-3">
@@ -496,10 +501,18 @@
         <svg class="absolute top-0 inset-x-0 mx-auto z-10" width="74" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="#e8e8e8"></path>
           </svg>
-          <div class="rounded-[32px] overflow-hidden">
-            <video poster="../img/Rectangle 44.png" controls class="w-full h-[488px]">
-              <source src="../img/64ad88885b273.mp4" type="video/mp4">
-            </video>
+          <div class="rounded-[32px] overflow-hidden relative z-10">
+            <!-- play icon -->
+            <svg class="player-button absolute inset-0 m-auto cursor-pointer block z-10" width="134" height="134" viewBox="0 0 134 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M66.5998 122.76C97.2266 122.76 122.053 97.9333 122.053 67.3065C122.053 36.6796 97.2266 11.8532 66.5998 11.8532C35.9729 11.8532 11.1465 36.6796 11.1465 67.3065C11.1465 97.9333 35.9729 122.76 66.5998 122.76Z" fill="white"/>
+              <path d="M85.5316 73.1792L59.3577 88.6341C55.1432 91.1184 49.9639 87.8799 49.9639 82.756V51.8574C49.9639 46.7336 55.1432 43.5006 59.3577 45.9849L85.5316 61.4398C89.8625 64.0017 89.8625 70.6228 85.5316 73.1848" fill="white"/>
+              </svg>
+            <!--  -->
+            <video
+              src="../img//64ad88885b273.mp4"
+              class="w-full h-[488px] aspect-[7/5] object-cover block player-video"
+              poster="../img/Rectangle 44.png"
+            ></video>
           </div>
           <div class="mt-[26px] flex items-center">
             <div class="bg-white relative rounded-[30px] overflow-hidden p-6 pb-11 rtl:pr-11 ltr:pl-11 shadow-1">
@@ -1727,11 +1740,11 @@
                <div class="swiper-wrapper">
                  <div class="swiper-slide">
                   <div>
-                    <div class="bg-white p-[14px] rounded-2xl relative">
+                    <div class="bg-white p-3 rounded-2xl relative z-1">
                       <svg class="absolute rotate-180 -top-3 inset-x-0 mx-auto z-10" width="44" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="white"></path>
                         </svg>
-                        <svg class="absolute rtl:-left-4 ltr:-right-4 -top-[39px]" width="95" height="87" viewBox="0 0 95 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="absolute z-2 rtl:-left-4 ltr:-right-4 -top-[36px]" width="95" height="87" viewBox="0 0 95 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g filter="url(#filter0_d_110_115)">
                           <path d="M36.925 56.814C32.2168 56.814 29.3194 55.0031 29.3194 47.7597C29.3194 33.6351 31.8546 31.462 43.8062 30.0134V37.9811C37.2871 39.0676 36.925 39.4298 36.925 42.3271C41.6332 42.3271 44.5305 43.7758 44.5305 49.2084C44.5305 54.6409 41.6332 56.814 36.925 56.814ZM57.9337 56.814C53.2255 56.814 50.3281 55.0031 50.3281 47.7597C50.3281 33.6351 52.8633 31.462 64.8149 30.0134V37.9811C58.2959 39.0676 57.9337 39.4298 57.9337 42.3271C62.6419 42.3271 65.5393 43.7758 65.5393 49.2084C65.5393 54.6409 62.6419 56.814 57.9337 56.814Z" fill="#004D8B"/>
                           </g>
@@ -1748,24 +1761,32 @@
                           </filter>
                           </defs>
                           </svg>
-                      <div class="rounded-md overflow-hidden h-[276px]">
-                        <video poster="../img/Rectangle 44 (2).png" controls="" class="w-full h-full">
-                          <source src="../img/64ad88885b273.mp4" type="video/mp4">
-                        </video>
+                      <div class="rounded-md overflow-hidden h-[276px] relative">
+                        <!-- play icon -->
+                        <svg class="player-button absolute inset-0 m-auto cursor-pointer block z-10" width="46" height="46" viewBox="0 0 134 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M66.5998 122.76C97.2266 122.76 122.053 97.9333 122.053 67.3065C122.053 36.6796 97.2266 11.8532 66.5998 11.8532C35.9729 11.8532 11.1465 36.6796 11.1465 67.3065C11.1465 97.9333 35.9729 122.76 66.5998 122.76Z" fill="white"/>
+                          <path d="M85.5316 73.1792L59.3577 88.6341C55.1432 91.1184 49.9639 87.8799 49.9639 82.756V51.8574C49.9639 46.7336 55.1432 43.5006 59.3577 45.9849L85.5316 61.4398C89.8625 64.0017 89.8625 70.6228 85.5316 73.1848" fill="white"/>
+                          </svg>
+                        <!--  -->
+                        <video
+                          src="../img//64ad88885b273.mp4"
+                          class="w-full h-full aspect-[7/5] object-cover block player-video"
+                          poster="../img/Rectangle 44 (2).png"
+                        ></video>
                       </div>
                       <p class="mt-2.5 text-center text-black text-xs font-black">عطا حیدری زاد</p>
                       <p class="text-center opacity-60 text-[9px] mt-2">مدیرعامل - شرکت لورم ایپسومان گستر</p>
                     </div>
-                    <div class="h-2.5 bg-[#ebebeb] rounded-b-2xl mx-5 shadow-9"></div>
+                    <div class="h-2.5 bg-[#ebebeb] relative -top-[1px] rounded-b-2xl mx-5 shadow-9"></div>
                   </div>
                  </div>
                  <div class="swiper-slide">
                   <div>
-                    <div class="bg-white p-[14px] rounded-2xl relative">
+                    <div class="bg-white p-3 rounded-2xl relative z-1">
                       <svg class="absolute rotate-180 -top-3 inset-x-0 mx-auto z-10" width="44" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="white"></path>
                         </svg>
-                        <svg class="absolute rtl:-left-4 ltr:-right-4 -top-[39px]" width="95" height="87" viewBox="0 0 95 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="absolute z-2 rtl:-left-4 ltr:-right-4 -top-[36px]" width="95" height="87" viewBox="0 0 95 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g filter="url(#filter0_d_110_115)">
                           <path d="M36.925 56.814C32.2168 56.814 29.3194 55.0031 29.3194 47.7597C29.3194 33.6351 31.8546 31.462 43.8062 30.0134V37.9811C37.2871 39.0676 36.925 39.4298 36.925 42.3271C41.6332 42.3271 44.5305 43.7758 44.5305 49.2084C44.5305 54.6409 41.6332 56.814 36.925 56.814ZM57.9337 56.814C53.2255 56.814 50.3281 55.0031 50.3281 47.7597C50.3281 33.6351 52.8633 31.462 64.8149 30.0134V37.9811C58.2959 39.0676 57.9337 39.4298 57.9337 42.3271C62.6419 42.3271 65.5393 43.7758 65.5393 49.2084C65.5393 54.6409 62.6419 56.814 57.9337 56.814Z" fill="#004D8B"/>
                           </g>
@@ -1782,24 +1803,32 @@
                           </filter>
                           </defs>
                           </svg>
-                      <div class="rounded-md overflow-hidden h-[276px]">
-                        <video poster="../img/Rectangle 44 (2).png" controls="" class="w-full h-full">
-                          <source src="../img/64ad88885b273.mp4" type="video/mp4">
-                        </video>
+                      <div class="rounded-md overflow-hidden h-[276px] relative">
+                        <!-- play icon -->
+                        <svg class="player-button absolute inset-0 m-auto cursor-pointer block z-10" width="46" height="46" viewBox="0 0 134 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M66.5998 122.76C97.2266 122.76 122.053 97.9333 122.053 67.3065C122.053 36.6796 97.2266 11.8532 66.5998 11.8532C35.9729 11.8532 11.1465 36.6796 11.1465 67.3065C11.1465 97.9333 35.9729 122.76 66.5998 122.76Z" fill="white"/>
+                          <path d="M85.5316 73.1792L59.3577 88.6341C55.1432 91.1184 49.9639 87.8799 49.9639 82.756V51.8574C49.9639 46.7336 55.1432 43.5006 59.3577 45.9849L85.5316 61.4398C89.8625 64.0017 89.8625 70.6228 85.5316 73.1848" fill="white"/>
+                          </svg>
+                        <!--  -->
+                        <video
+                          src="../img//64ad88885b273.mp4"
+                          class="w-full h-full aspect-[7/5] object-cover block player-video"
+                          poster="../img/Rectangle 44 (2).png"
+                        ></video>
                       </div>
                       <p class="mt-2.5 text-center text-black text-xs font-black">عطا حیدری زاد</p>
                       <p class="text-center opacity-60 text-[9px] mt-2">مدیرعامل - شرکت لورم ایپسومان گستر</p>
                     </div>
-                    <div class="h-2.5 bg-[#ebebeb] rounded-b-2xl mx-5 shadow-9"></div>
+                    <div class="h-2.5 bg-[#ebebeb] relative -top-[1px] rounded-b-2xl mx-5 shadow-9"></div>
                   </div>
                  </div>
                  <div class="swiper-slide">
                   <div>
-                    <div class="bg-white p-[14px] rounded-2xl relative">
+                    <div class="bg-white p-3 rounded-2xl relative z-1">
                       <svg class="absolute rotate-180 -top-3 inset-x-0 mx-auto z-10" width="44" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="white"></path>
                         </svg>
-                        <svg class="absolute rtl:-left-4 ltr:-right-4 -top-[39px]" width="95" height="87" viewBox="0 0 95 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="absolute z-2 rtl:-left-4 ltr:-right-4 -top-[36px]" width="95" height="87" viewBox="0 0 95 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g filter="url(#filter0_d_110_115)">
                           <path d="M36.925 56.814C32.2168 56.814 29.3194 55.0031 29.3194 47.7597C29.3194 33.6351 31.8546 31.462 43.8062 30.0134V37.9811C37.2871 39.0676 36.925 39.4298 36.925 42.3271C41.6332 42.3271 44.5305 43.7758 44.5305 49.2084C44.5305 54.6409 41.6332 56.814 36.925 56.814ZM57.9337 56.814C53.2255 56.814 50.3281 55.0031 50.3281 47.7597C50.3281 33.6351 52.8633 31.462 64.8149 30.0134V37.9811C58.2959 39.0676 57.9337 39.4298 57.9337 42.3271C62.6419 42.3271 65.5393 43.7758 65.5393 49.2084C65.5393 54.6409 62.6419 56.814 57.9337 56.814Z" fill="#004D8B"/>
                           </g>
@@ -1816,24 +1845,32 @@
                           </filter>
                           </defs>
                           </svg>
-                      <div class="rounded-md overflow-hidden h-[276px]">
-                        <video poster="../img/Rectangle 44 (2).png" controls="" class="w-full h-full">
-                          <source src="../img/64ad88885b273.mp4" type="video/mp4">
-                        </video>
+                      <div class="rounded-md overflow-hidden h-[276px] relative">
+                        <!-- play icon -->
+                        <svg class="player-button absolute inset-0 m-auto cursor-pointer block z-10" width="46" height="46" viewBox="0 0 134 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M66.5998 122.76C97.2266 122.76 122.053 97.9333 122.053 67.3065C122.053 36.6796 97.2266 11.8532 66.5998 11.8532C35.9729 11.8532 11.1465 36.6796 11.1465 67.3065C11.1465 97.9333 35.9729 122.76 66.5998 122.76Z" fill="white"/>
+                          <path d="M85.5316 73.1792L59.3577 88.6341C55.1432 91.1184 49.9639 87.8799 49.9639 82.756V51.8574C49.9639 46.7336 55.1432 43.5006 59.3577 45.9849L85.5316 61.4398C89.8625 64.0017 89.8625 70.6228 85.5316 73.1848" fill="white"/>
+                          </svg>
+                        <!--  -->
+                        <video
+                          src="../img//64ad88885b273.mp4"
+                          class="w-full h-full aspect-[7/5] object-cover block player-video"
+                          poster="../img/Rectangle 44 (2).png"
+                        ></video>
                       </div>
                       <p class="mt-2.5 text-center text-black text-xs font-black">عطا حیدری زاد</p>
                       <p class="text-center opacity-60 text-[9px] mt-2">مدیرعامل - شرکت لورم ایپسومان گستر</p>
                     </div>
-                    <div class="h-2.5 bg-[#ebebeb] rounded-b-2xl mx-5 shadow-9"></div>
+                    <div class="h-2.5 bg-[#ebebeb] relative -top-[1px] rounded-b-2xl mx-5 shadow-9"></div>
                   </div>
                  </div>
                  <div class="swiper-slide">
                   <div>
-                    <div class="bg-white p-[14px] rounded-2xl relative">
+                    <div class="bg-white p-3 rounded-2xl relative z-1">
                       <svg class="absolute rotate-180 -top-3 inset-x-0 mx-auto z-10" width="44" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="white"></path>
                         </svg>
-                        <svg class="absolute rtl:-left-4 ltr:-right-4 -top-[39px]" width="95" height="87" viewBox="0 0 95 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="absolute z-2 rtl:-left-4 ltr:-right-4 -top-[36px]" width="95" height="87" viewBox="0 0 95 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g filter="url(#filter0_d_110_115)">
                           <path d="M36.925 56.814C32.2168 56.814 29.3194 55.0031 29.3194 47.7597C29.3194 33.6351 31.8546 31.462 43.8062 30.0134V37.9811C37.2871 39.0676 36.925 39.4298 36.925 42.3271C41.6332 42.3271 44.5305 43.7758 44.5305 49.2084C44.5305 54.6409 41.6332 56.814 36.925 56.814ZM57.9337 56.814C53.2255 56.814 50.3281 55.0031 50.3281 47.7597C50.3281 33.6351 52.8633 31.462 64.8149 30.0134V37.9811C58.2959 39.0676 57.9337 39.4298 57.9337 42.3271C62.6419 42.3271 65.5393 43.7758 65.5393 49.2084C65.5393 54.6409 62.6419 56.814 57.9337 56.814Z" fill="#004D8B"/>
                           </g>
@@ -1850,24 +1887,32 @@
                           </filter>
                           </defs>
                           </svg>
-                      <div class="rounded-md overflow-hidden h-[276px]">
-                        <video poster="../img/Rectangle 44 (2).png" controls="" class="w-full h-full">
-                          <source src="../img/64ad88885b273.mp4" type="video/mp4">
-                        </video>
+                      <div class="rounded-md overflow-hidden h-[276px] relative">
+                        <!-- play icon -->
+                        <svg class="player-button absolute inset-0 m-auto cursor-pointer block z-10" width="46" height="46" viewBox="0 0 134 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M66.5998 122.76C97.2266 122.76 122.053 97.9333 122.053 67.3065C122.053 36.6796 97.2266 11.8532 66.5998 11.8532C35.9729 11.8532 11.1465 36.6796 11.1465 67.3065C11.1465 97.9333 35.9729 122.76 66.5998 122.76Z" fill="white"/>
+                          <path d="M85.5316 73.1792L59.3577 88.6341C55.1432 91.1184 49.9639 87.8799 49.9639 82.756V51.8574C49.9639 46.7336 55.1432 43.5006 59.3577 45.9849L85.5316 61.4398C89.8625 64.0017 89.8625 70.6228 85.5316 73.1848" fill="white"/>
+                          </svg>
+                        <!--  -->
+                        <video
+                          src="../img//64ad88885b273.mp4"
+                          class="w-full h-full aspect-[7/5] object-cover block player-video"
+                          poster="../img/Rectangle 44 (2).png"
+                        ></video>
                       </div>
                       <p class="mt-2.5 text-center text-black text-xs font-black">عطا حیدری زاد</p>
                       <p class="text-center opacity-60 text-[9px] mt-2">مدیرعامل - شرکت لورم ایپسومان گستر</p>
                     </div>
-                    <div class="h-2.5 bg-[#ebebeb] rounded-b-2xl mx-5 shadow-9"></div>
+                    <div class="h-2.5 bg-[#ebebeb] relative -top-[1px] rounded-b-2xl mx-5 shadow-9"></div>
                   </div>
                  </div>
                  <div class="swiper-slide">
                   <div>
-                    <div class="bg-white p-[14px] rounded-2xl relative">
+                    <div class="bg-white p-3 rounded-2xl relative z-1">
                       <svg class="absolute rotate-180 -top-3 inset-x-0 mx-auto z-10" width="44" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="white"></path>
                         </svg>
-                        <svg class="absolute rtl:-left-4 ltr:-right-4 -top-[39px]" width="95" height="87" viewBox="0 0 95 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="absolute z-2 rtl:-left-4 ltr:-right-4 -top-[36px]" width="95" height="87" viewBox="0 0 95 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g filter="url(#filter0_d_110_115)">
                           <path d="M36.925 56.814C32.2168 56.814 29.3194 55.0031 29.3194 47.7597C29.3194 33.6351 31.8546 31.462 43.8062 30.0134V37.9811C37.2871 39.0676 36.925 39.4298 36.925 42.3271C41.6332 42.3271 44.5305 43.7758 44.5305 49.2084C44.5305 54.6409 41.6332 56.814 36.925 56.814ZM57.9337 56.814C53.2255 56.814 50.3281 55.0031 50.3281 47.7597C50.3281 33.6351 52.8633 31.462 64.8149 30.0134V37.9811C58.2959 39.0676 57.9337 39.4298 57.9337 42.3271C62.6419 42.3271 65.5393 43.7758 65.5393 49.2084C65.5393 54.6409 62.6419 56.814 57.9337 56.814Z" fill="#004D8B"/>
                           </g>
@@ -1884,15 +1929,23 @@
                           </filter>
                           </defs>
                           </svg>
-                      <div class="rounded-md overflow-hidden h-[276px]">
-                        <video poster="../img/Rectangle 44 (2).png" controls="" class="w-full h-full">
-                          <source src="../img/64ad88885b273.mp4" type="video/mp4">
-                        </video>
+                      <div class="rounded-md overflow-hidden h-[276px] relative">
+                        <!-- play icon -->
+                        <svg class="player-button absolute inset-0 m-auto cursor-pointer block z-10" width="46" height="46" viewBox="0 0 134 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M66.5998 122.76C97.2266 122.76 122.053 97.9333 122.053 67.3065C122.053 36.6796 97.2266 11.8532 66.5998 11.8532C35.9729 11.8532 11.1465 36.6796 11.1465 67.3065C11.1465 97.9333 35.9729 122.76 66.5998 122.76Z" fill="white"/>
+                          <path d="M85.5316 73.1792L59.3577 88.6341C55.1432 91.1184 49.9639 87.8799 49.9639 82.756V51.8574C49.9639 46.7336 55.1432 43.5006 59.3577 45.9849L85.5316 61.4398C89.8625 64.0017 89.8625 70.6228 85.5316 73.1848" fill="white"/>
+                          </svg>
+                        <!--  -->
+                        <video
+                          src="../img//64ad88885b273.mp4"
+                          class="w-full h-full aspect-[7/5] object-cover block player-video"
+                          poster="../img/Rectangle 44 (2).png"
+                        ></video>
                       </div>
                       <p class="mt-2.5 text-center text-black text-xs font-black">عطا حیدری زاد</p>
                       <p class="text-center opacity-60 text-[9px] mt-2">مدیرعامل - شرکت لورم ایپسومان گستر</p>
                     </div>
-                    <div class="h-2.5 bg-[#ebebeb] rounded-b-2xl mx-5 shadow-9"></div>
+                    <div class="h-2.5 bg-[#ebebeb] relative -top-[1px] rounded-b-2xl mx-5 shadow-9"></div>
                   </div>
                  </div>
                </div>
@@ -2097,7 +2150,7 @@
     </section>
 
     <section class="mt-[120px]">
-      <div class="py-14 bg-img-1 overlay4 relative">
+      <div class="py-14 bg-img-1 overlay7 relative">
         <svg class="absolute rotate-180 bottom-0 inset-x-0 mx-auto z-10" width="74" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="#c8e4f1"></path>
           </svg>
@@ -2106,7 +2159,7 @@
               <img alt="img" src="../img/Shape (2).png" class="mt-3">
               <div class="text-white">
                 <h2 class="text-[30px] font-black">دریافت مشاوره</h2>
-                <p class="leading-9 -mt-1">شما می‌توانید جهت دریافت مشاوره پیرامون دوره‌ها، همه روزه (حتی جمعه‌ها) از ساعت ۹ صبح الی ۵ عصر با شماره تلفن ۰۲۱-<span class="font-black text-[30px]">۸۸۳۳۳۱۱۷</span> تماس حاصل نمایید و یا با پر کردن فرم زیر، منتظر تماس کارشناسان آموزش باشید.</p>
+                <p class="leading-9 -mt-1"><span class="opacity-60">شما می‌توانید جهت دریافت مشاوره پیرامون دوره‌ها، همه روزه (حتی جمعه‌ها) از ساعت ۹ صبح الی ۵ عصر با شماره تلفن </span><span class="opacity-100"><span class="text-base font-light">۰۲۱-</span><span class="font-black text-[30px]">۸۸۳۳۳۱۱۷</span></span><span class="opacity-60 rtl:mr-1 ltr:ml-1">تماس حاصل نمایید و یا با پر کردن فرم زیر، منتظر تماس کارشناسان آموزش باشید.</span></p>
               </div>
             </div>
             <div class="flex items-center gap-3 flex-shrink-0">
@@ -2371,6 +2424,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../js/script.js"></script>
+  <script src="../js/play-video.js"></script>
   <script src="../js/instagram-story.js"></script>
 </body>
 
