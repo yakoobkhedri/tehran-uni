@@ -76,6 +76,10 @@
   font-weight: 900;
   @apply rtl:font-yekanBakhBlack ltr:font-MontserratBold;
 }
+.font-extrablack{
+  font-weight: 950;
+  @apply rtl:font-yekanBakhExtraBlack ltr:font-MontserratBold;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -241,6 +245,9 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
 .shadow-11{
   box-shadow: 0px 0px 28.17px 0px #069CDF61;
 }
+.shadow-12{
+  box-shadow: 0px 0px 200px 0px rgba(0, 0, 0, 0.1);
+}
 .bg-blur-1{
   background-color: #78787859;
   backdrop-filter: blur(13.260251998901367px)
@@ -297,4 +304,58 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
 .swiper-pagination-bullet-active{
   width: 34px;
   background-color: white;
+}
+/* swiper effect */
+html[dir="ltr"] .data_imagesContLeftRight {
+  transform: translate(400px, 0);
+}
+html[dir="rtl"] .data_imagesContLeftRight {
+  transform: translate(-400px, 0);
+}
+.banner .swiper-slide img.data_imagesContLeftRight,
+.banner .swiper-slide a.data_imagesContBottomTop {
+  transition: all .4s;
+}
+.data_imagesContBottomTop {
+  transform: translate(0, -450px);
+}
+.banner .swiper-slide-active a.data_imagesContBottomTop {
+  transform: translate(0, 0);
+}
+.banner .swiper-slide-active img.data_imagesContLeftRight {
+  transform: translate(0, 0);
+}
+/* hover */
+
+.btnHover:hover{
+  animation: jello-horizontal 0.9s both;
+}
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
 }

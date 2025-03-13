@@ -26,11 +26,28 @@ var courses = new Swiper(".courses", {
     clickable: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
   },
 });
-
+var courses2 = new Swiper(".courses2", {
+  slidesPerView: 4.5,
+  loop:true,
+  spaceBetween: 22,
+  breakpoints: {
+    1200: {
+      slidesPerView: 4.5,
+    }
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next3",
+    prevEl: ".swiper-button-prev3",
+  },
+});
 var govahi = new Swiper(".govahi", {
   slidesPerView: 1,
   loop:true,
