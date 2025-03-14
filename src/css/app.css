@@ -52,6 +52,11 @@
 
   src: url('../src/fonts/Montserrat-Bold.ttf') format("trueType");
 }
+@font-face {
+  font-family: Morabba-ExtraBold;
+
+  src: url('../src/fonts/Morabba-ExtraBold.woff') format("woff");
+}
 .font-normal{
   font-weight: 400;
   @apply rtl:font-yekanBakhRegular ltr:font-MontserratRegular;
@@ -79,6 +84,9 @@
 .font-extrablack{
   font-weight: 950;
   @apply rtl:font-yekanBakhExtraBlack ltr:font-MontserratBold;
+}
+.font-MorabbaExtraBold{
+  font-family: Morabba-ExtraBold;
 }
 html {
   scroll-behavior: smooth;
