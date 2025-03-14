@@ -8,24 +8,34 @@
   <title>ورود</title>
 </head>
 
-<body class="max-w-[1536px] w-full mx-auto">
+<body class="max-w-[1536px] w-full mx-auto h-screen flex flex-col justify-center">
 
   <main>
 
-    <section class="mt-[72px]">
+    <section>
       <div class="max-w-content mx-auto px-4">
-        <div class="grid grid-cols-12 gap-10">
+        <div class="grid grid-cols-12 gap-[33px]">
           <div class="col-span-7">
-           <div class="rounded-[30px] flex-center relative overflow-hidden overlay7 bg-img-1 min-h-[683px] !bg-cover bg-center">
-            <svg class="absolute rtl:-rotate-90 ltr:rotate-90 my-auto inset-y-0 rtl:-left-[27px] ltr:-right-[27px] z-10" width="74" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="#f5f5f5"></path>
+           <div class="rounded-[30px] flex-center relative overlay8 bg-img-1 h-full !bg-cover bg-center">
+            <svg class="absolute rtl:-rotate-90 ltr:rotate-90 my-auto inset-y-0 rtl:-left-[26px] ltr:-right-[26px] z-10" width="74" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="#dfdfdf"></path>
               </svg>
              <img alt="logo" src="../img/Logo (2).png" class="relative z-3 w-[202px]">
            </div>
           </div>
           <div class="col-span-5">
-             <div>
-               <div class="rounded-[30px] bg-white overflow-hidden shadow-12 py-11 px-14">
+             <div class="relative">
+              <div class="w-[17px] h-[85%] absolute my-auto inset-y-0 rtl:right-[-33px] ltr:left-[-33px] rtl:rounded-r-[29px] ltr:rounded-l-[29px] shadow-13 bg-[#00000008]">
+                <svg class="absolute rtl:-rotate-90 ltr:rotate-90 my-auto inset-y-0 rtl:-left-[24px] ltr:-right-[24px] z-10" width="74" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="#f5f5f5"></path>
+                  </svg>
+              </div>
+              <div class="w-5 h-[92%] absolute my-auto inset-y-0 rtl:right-[-19px] ltr:left-[-19px] rtl:rounded-r-[29px] ltr:rounded-l-[29px] shadow-13 bg-white">
+                <svg class="absolute rtl:-rotate-90 ltr:rotate-90 my-auto inset-y-0 rtl:-left-[26px] ltr:-right-[26px] z-10" width="74" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="white"></path>
+                  </svg>
+              </div>
+               <div class="rounded-[30px] bg-white overflow-hidden shadow-13 py-11 px-14 relative z-1">
                  <a class="flex items-center justify-end gap-2 text-sm text-[#404040]">
                    <p>بازگشت به صفحه اصلی</p>
                    <svg class="ltrReverse" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +45,7 @@
                  <div class="flex items-end justify-center gap-4 mt-10">
                   <div>
                     <div class="bg-primary w-9 h-9 rounded-lg shadow-11 flex-center relative">
-                      <img alt="line" src="../img/Line 6 (2).png" class="absolute inset-x-0 mx-auto -top-[136px]">
+                      <img alt="line" src="../img/Line 6 (2).png" class="absolute inset-x-0 mx-auto rtl:right-[1.5px] ltr:left-[1.5px] -top-[136px]">
                       <svg class="absolute rotate-180 -top-3 inset-x-0 mx-auto z-10" width="38" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="#059bde"></path>
                         </svg>
@@ -55,6 +65,107 @@
                     </div>
                   </div>
                 </div>
+                <div class="rounded-[15px] bg-[#F4F4F4] p-1 flex items-center gap-2 text-black text-center mt-6">
+                  <div class="rounded-xl w-1/2 py-2.5 px-1 cursor-pointer shadow-14 opacity-60">ورود با نام کاربری و ایمیل</div>
+                  <div class="rounded-xl w-1/2 py-2.5 px-1 cursor-pointer shadow-14 opacity-60">ورود با کد یکبار مصرف</div>
+                </div>
+                <div>
+                  <div class="hidden">
+                    <form class="mt-14">
+                      <div>
+                        <label class="font-bold text-lg text-black">نام کاربری یا ایمیل</label>
+                        <div class="mt-2 rounded-[10px] overflow-hidden relative bg-[#F4F4F4] h-[60px] px-2 flex items-center gap-[10px]">
+                          <div class="w-10 h-10 rounded-[10px] bg-white flex-center flex-shrink-0">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path opacity="0.5" d="M22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12Z" fill="#004D8B"/>
+                              <path d="M16.807 19.011C15.3928 19.9834 13.7163 20.5028 12 20.5C10.2837 20.5028 8.60719 19.9834 7.19298 19.011C6.58898 18.596 6.33098 17.806 6.68298 17.163C7.40998 15.83 8.90998 15 12 15C15.09 15 16.59 15.83 17.318 17.163C17.668 17.806 17.411 18.596 16.807 19.011ZM12 12C12.7956 12 13.5587 11.6839 14.1213 11.1213C14.6839 10.5587 15 9.79565 15 9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6C11.2043 6 10.4413 6.31607 9.87866 6.87868C9.31605 7.44129 8.99998 8.20435 8.99998 9C8.99998 9.79565 9.31605 10.5587 9.87866 11.1213C10.4413 11.6839 11.2043 12 12 12Z" fill="#004D8B"/>
+                              </svg>
+                          </div>
+                          <div class="relative">
+                            <svg class="absolute -top-[20px] inset-x-0 rtl:-right-[19px] ltr:-left-[19px] mx-auto z-10" width="38" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="white"></path>
+                              </svg>
+                              <svg width="1" height="36" viewBox="0 0 1 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line opacity="0.3" x1="0.247525" y1="-3.24589e-08" x2="0.247529" y2="36" stroke="black" stroke-width="0.495049" stroke-dasharray="2.48 2.48"/>
+                                </svg>
+                          </div>
+                            <input placeholder="نام کاربری یا ایمیل خود را وارد کنید" class="flex-grow w-full bg-transparent outline-none">
+                        </div>
+                      </div>
+                      <div class="mt-[22px]">
+                        <label class="font-bold text-lg text-black">رمز عبور</label>
+                        <div class="mt-2 rounded-[10px] overflow-hidden relative bg-[#F4F4F4] h-[60px] px-2 flex items-center gap-[10px]">
+                          <div class="w-10 h-10 rounded-[10px] bg-white flex-center flex-shrink-0">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path opacity="0.5" d="M2 15.75C2 12.4507 2 10.7998 2.879 9.7755C3.757 8.75 5.172 8.75 8 8.75H16C18.828 8.75 20.243 8.75 21.121 9.7755C22 10.7998 22 12.4507 22 15.75C22 19.0493 22 20.7002 21.121 21.7245C20.243 22.75 18.828 22.75 16 22.75H8C5.172 22.75 3.757 22.75 2.879 21.7245C2 20.7002 2 19.0493 2 15.75Z" fill="#004D8B"/>
+                              <path d="M6.75 6.75C6.75 5.35761 7.30312 4.02225 8.28769 3.03769C9.27225 2.05312 10.6076 1.5 12 1.5C13.3924 1.5 14.7277 2.05312 15.7123 3.03769C16.6969 4.02225 17.25 5.35761 17.25 6.75V8.754C17.817 8.759 18.314 8.772 18.75 8.804V6.75C18.75 4.95979 18.0388 3.2429 16.773 1.97703C15.5071 0.711159 13.7902 0 12 0C10.2098 0 8.4929 0.711159 7.22703 1.97703C5.96116 3.2429 5.25 4.95979 5.25 6.75V8.805C5.74935 8.77237 6.24959 8.75536 6.75 8.754V6.75Z" fill="#004D8B"/>
+                              </svg>
+                          </div>
+                          <div class="relative">
+                            <svg class="absolute -top-[20px] inset-x-0 rtl:-right-[19px] ltr:-left-[19px] mx-auto z-10" width="38" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="white"></path>
+                              </svg>
+                              <svg width="1" height="36" viewBox="0 0 1 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line opacity="0.3" x1="0.247525" y1="-3.24589e-08" x2="0.247529" y2="36" stroke="black" stroke-width="0.495049" stroke-dasharray="2.48 2.48"/>
+                                </svg>
+                          </div>
+                            <input placeholder="رمز عبور خود را وارد کنید" class="flex-grow w-full bg-transparent outline-none">
+                        </div>
+                      </div>
+                      <a class="text-[13px] mt-[22px] text-center text-[#004D8B] underline block">فراموشی رمز عبور</a>
+                      <button class="bg-primary btnHover border-0 rounded-[30px] h-[60px] w-full mt-[22px] flex-center gap-2 px-2 text-white font-black">
+                        <p>ورود به حساب کاربری</p>
+                        <svg class="ltrReverse" width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path opacity="0.5" d="M15.5841 6.89135C15.7599 6.89135 15.9285 6.8215 16.0529 6.69717C16.1772 6.57285 16.2471 6.40422 16.2471 6.22839C16.2471 6.05256 16.1772 5.88394 16.0529 5.75961C15.9285 5.63528 15.7599 5.56543 15.5841 5.56543V6.89135ZM15.5841 5.56543H1.44092V6.89135H15.5841V5.56543Z" fill="white"></path>
+                         <path d="M6.74461 0.924805L1.44092 6.22849L6.74461 11.5322" stroke="white" stroke-width="1.32592" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                      </button>
+                    </form>
+                  </div>
+                  <div>
+                    <form id="loginForm" class="mt-[212px]">
+                      <div class="hidden">
+                        <label class="font-bold text-lg text-black">شماره موبایل</label>
+                        <div class="mt-2 rounded-[10px] overflow-hidden relative bg-[#F4F4F4] h-[60px] px-2 flex items-center gap-[10px]">
+                          <div class="w-10 h-10 rounded-[10px] bg-white flex-center flex-shrink-0">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path opacity="0.5" d="M22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12Z" fill="#004D8B"/>
+                              <path d="M16.807 19.011C15.3928 19.9834 13.7163 20.5028 12 20.5C10.2837 20.5028 8.60719 19.9834 7.19298 19.011C6.58898 18.596 6.33098 17.806 6.68298 17.163C7.40998 15.83 8.90998 15 12 15C15.09 15 16.59 15.83 17.318 17.163C17.668 17.806 17.411 18.596 16.807 19.011ZM12 12C12.7956 12 13.5587 11.6839 14.1213 11.1213C14.6839 10.5587 15 9.79565 15 9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6C11.2043 6 10.4413 6.31607 9.87866 6.87868C9.31605 7.44129 8.99998 8.20435 8.99998 9C8.99998 9.79565 9.31605 10.5587 9.87866 11.1213C10.4413 11.6839 11.2043 12 12 12Z" fill="#004D8B"/>
+                              </svg>
+                          </div>
+                          <div class="relative">
+                            <svg class="absolute -top-[20px] inset-x-0 rtl:-right-[19px] ltr:-left-[19px] mx-auto z-10" width="38" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="white"></path>
+                              </svg>
+                              <svg width="1" height="36" viewBox="0 0 1 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line opacity="0.3" x1="0.247525" y1="-3.24589e-08" x2="0.247529" y2="36" stroke="black" stroke-width="0.495049" stroke-dasharray="2.48 2.48"/>
+                                </svg>
+                          </div>
+                            <input placeholder="۹۱۲۳۴۵۶۷۸۹" class="flex-grow w-full bg-transparent outline-none">
+                            <a class="underline text-[13px] text-[#004D8B] flex-shrink-0 mx-2">ارسال کد تایید</a>
+                        </div>
+                      </div>
+                      <div>
+                        <label class="font-bold text-lg text-black">کد تایید</label>
+                        <div class="otpContainer mt-2 flex-between gap-3 sm:gap-4 font-extrabold" dir="ltr">
+                          <input type="number" maxlength="1" class="block w-full h-12 sm:h-[60px] rounded-[15px] text-center otpInput bg-[#F4F4F4] outline-none">
+                          <input type="number" maxlength="1" disabled="" class="block w-full h-12 sm:h-[60px] rounded-[15px] text-center otpInput bg-[#F4F4F4] outline-none">
+                          <input type="number" maxlength="1" disabled="" class="block w-full h-12 sm:h-[60px] rounded-[15px] text-center otpInput bg-[#F4F4F4] outline-none">
+                          <input type="number" maxlength="1" disabled="" class="block w-full h-12 sm:h-[60px] rounded-[15px] text-center otpInput bg-[#F4F4F4] outline-none">
+                          <input type="number" maxlength="1" disabled="" class="block w-full h-12 sm:h-[60px] rounded-[15px] text-center otpInput bg-[#F4F4F4] outline-none">
+                         </div>
+                         <input type="hidden" id="otpHiddenInput">
+                      </div>
+                      <button class="bg-primary btnHover border-0 rounded-[30px] h-[60px] w-full mt-[22px] flex-center gap-2 px-2 text-white font-black">
+                        <p>ورود به حساب کاربری</p>
+                        <svg class="ltrReverse" width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path opacity="0.5" d="M15.5841 6.89135C15.7599 6.89135 15.9285 6.8215 16.0529 6.69717C16.1772 6.57285 16.2471 6.40422 16.2471 6.22839C16.2471 6.05256 16.1772 5.88394 16.0529 5.75961C15.9285 5.63528 15.7599 5.56543 15.5841 5.56543V6.89135ZM15.5841 5.56543H1.44092V6.89135H15.5841V5.56543Z" fill="white"></path>
+                         <path d="M6.74461 0.924805L1.44092 6.22849L6.74461 11.5322" stroke="white" stroke-width="1.32592" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                      </button>
+                    </form>
+                  </div>
+                </div>
                </div>
              </div>
           </div>
@@ -65,6 +176,7 @@
   </main>
 
   <script src="../js/script.js"></script>
+  <script src="../js/otp.js"></script>
 </body>
 
 </html>
