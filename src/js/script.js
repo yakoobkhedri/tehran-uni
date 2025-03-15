@@ -1,3 +1,24 @@
+// tab
+
+
+let tab = Array.from(document.querySelectorAll('.tab'));
+let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
+
+tab.forEach((item) => {
+  item.addEventListener('click', function() {
+    tab.forEach((items) => {items.classList.remove('active')});
+      item.classList.add('active');
+      let tabId = item.dataset.id;
+      tabContent.forEach((content) => {
+          let contentId = content.dataset.id;
+          if (tabId === contentId) {
+              content.classList.remove('hidden');
+          } else {
+            content.classList.add('hidden');
+          }
+      })
+  })
+})
 // swiper
 
 var banner = new Swiper(".banner", {
@@ -98,3 +119,4 @@ var blog = new Swiper(".blog", {
     prevEl: ".swiper-button-prev",
   },
 });
+

@@ -286,6 +286,18 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none; /* برای کروم و سافاری */
   margin: 0; /* حذف margin پیش‌فرض */
 }
+/* tab */
+.tab:hover,.tab.active{
+  background-color: white;
+  opacity: 100%;
+}
+/* disabled button */
+.btn:disabled{
+  opacity: 50%;
+}
+.btn:disabled:hover{
+  animation: none;
+}
 /* instagram story */
 .full-screen{
   position: fixed;
