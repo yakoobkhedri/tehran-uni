@@ -3855,6 +3855,14 @@ html[dir="rtl"] .data_imagesContLeftRight {
     font-size: 15px;
   }
 
+  .lg\:leading-8 {
+    line-height: 2rem;
+  }
+
+  .lg\:leading-10 {
+    line-height: 2.5rem;
+  }
+
   :is([dir="ltr"] .ltr\:lg\:right-10) {
     right: 2.5rem;
   }
