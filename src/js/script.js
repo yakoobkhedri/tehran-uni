@@ -1,6 +1,5 @@
 // tab
 
-
 let tab = Array.from(document.querySelectorAll('.tab'));
 let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
 

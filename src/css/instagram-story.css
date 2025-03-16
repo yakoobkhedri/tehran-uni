@@ -1,15 +1,4 @@
-@import "../fonts/yekanbakh/yekanbakh.css";
-@import "../fonts/yekanbakh_fanum/yekanbakh_fanum.css";
-@import "../fonts/peyda/peyda.css";
-@import "../fonts/peyda_fanum/peyda_fanum.css";
-@import "../fonts/iransans/iransans.css";
-@import "../fonts/iransans_fanum/iransans_fanum.css";
-@import "../fonts/dana/dana.css";
 @import "icons.css";
-@import "helper.css";
-@import "jquery.range.css";
-@import "table.css";
-@import "reset-bootstrap.css";
 
 /* stories */
 .story-item {
@@ -124,8 +113,9 @@
     visibility: visible!important;
 }
 .large-stories-swiper{
-    width: 420px;
-    height:747px !important;
+    width: 100%;
+    height: 747px !important;
+    max-width: 420px;
 }
 .large-stories-swiper .swiper-pagination {
     padding: 0 20px;
@@ -381,7 +371,6 @@
     background: #fff;
 }
 
-
 .custom-swiper-button-next,
 .custom-swiper-button-prev{
     background: #fff;
@@ -429,4 +418,12 @@
 
 .large-stories-swiper .swiper-slide img{
     width: 100% !important;
+    margin: auto;
+}
+#storiesSwiperSm .swiper-wrapper{
+    width: 100% !important;
+    transform: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

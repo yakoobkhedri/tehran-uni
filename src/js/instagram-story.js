@@ -3,9 +3,10 @@ const defaultStoryDuration = 7000;
 new Swiper('#storiesSwiperSm', {
     changeDirection: 'rtl',
     slidesPerView: 3.3,
-    spaceBetween: 41,
+    spaceBetween: 0,
+    centeredSlides: true, // اسلاید وسطی در مرکز باشد
     loop:false,
-    speed: 200,
+    // speed: 200,
     freeMode:true,
     navigation: {
         nextEl: '.custom-swiper-button-next',
@@ -15,7 +16,7 @@ new Swiper('#storiesSwiperSm', {
     breakpoints: {
         // when window width is >= 992px
         1200: {
-            slidesPerView: 9,
+            slidesPerView: 8,
             navigation: {
                 nextEl: '.custom-swiper-button-next',
                 prevEl: '.custom-swiper-button-prev',

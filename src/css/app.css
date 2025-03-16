@@ -286,6 +286,45 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none; /* برای کروم و سافاری */
   margin: 0; /* حذف margin پیش‌فرض */
 }
+/* mobile menu */
+
+#hamIcon.active svg:last-child{
+  display: block;
+}
+#hamIcon.active svg:first-child{
+  display: none;
+}
+.mobileMenu{
+  display: none;
+  z-index: 999;
+}
+.mobileMenu.active{
+  display: block;
+}
+.dropdownBtn .arrowSvg.active,.dropdownBtn2 .arrowSvg.active {
+  transform: rotate(0);
+}
+.dropdownContent,.dropdownContent2,.accordionContent {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .4s;
+}
+.dropdownContent.active,.dropdownContent2.active {
+  max-height: 2000px;
+  margin-top: 18px;
+  overflow: hidden;
+}
+.accordionContent.active,.accordionContent2.active{
+  max-height: 2000px;
+}
+.dropdownContent2.active{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.arrowShape.active{
+  opacity: 100%;
+}
 /* tab */
 .tab:hover,.tab.active{
   background-color: white;
