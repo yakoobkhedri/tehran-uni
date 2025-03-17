@@ -290,6 +290,9 @@ input[type="number"]::-webkit-outer-spin-button {
 header.active{
   z-index: 99;
 }
+header.active #headerarrow path{
+  fill: #9b9b9b;
+}
 #overlay{
   position: fixed;
   width: 100%;

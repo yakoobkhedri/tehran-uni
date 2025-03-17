@@ -2803,6 +2803,10 @@ header.active{
   z-index: 99;
 }
 
+header.active #headerarrow path{
+  fill: #9b9b9b;
+}
+
 #overlay{
   position: fixed;
   width: 100%;
@@ -3661,8 +3665,8 @@ html[dir="rtl"] .data_imagesContLeftRight {
 }
 
 @media (min-width: 640px) {
-  .sm\:\!top-\[92px\] {
-    top: 92px !important;
+  .sm\:top-\[122px\] {
+    top: 122px;
   }
 
   .sm\:mx-2 {
