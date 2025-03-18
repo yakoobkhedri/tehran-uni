@@ -882,6 +882,10 @@ video {
   bottom: -90px;
 }
 
+.-top-\[50px\] {
+  top: -50px;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -1407,6 +1411,10 @@ video {
   height: 100%;
 }
 
+.h-\[231px\] {
+  height: 231px;
+}
+
 .min-h-\[315px\] {
   min-height: 315px;
 }
@@ -1501,6 +1509,10 @@ video {
 
 .w-3 {
   width: 0.75rem;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .max-w-\[1536px\] {
@@ -3860,6 +3872,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     top: 0px;
   }
 
+  .sm\:-top-\[57px\] {
+    top: -57px;
+  }
+
   .sm\:order-first {
     order: -9999;
   }
@@ -3867,6 +3883,18 @@ html[dir="rtl"] .data_imagesContLeftRight {
   .sm\:mx-2 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+  }
+
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .sm\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .sm\:block {
+    display: block;
   }
 
   .sm\:flex {
@@ -3879,6 +3907,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
   .sm\:h-\[60px\] {
     height: 60px;
+  }
+
+  .sm\:h-\[488px\] {
+    height: 488px;
   }
 
   .sm\:min-h-full {
@@ -3901,6 +3933,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     flex-direction: row;
   }
 
+  .sm\:items-start {
+    align-items: flex-start;
+  }
+
   .sm\:items-center {
     align-items: center;
   }
@@ -3921,8 +3957,20 @@ html[dir="rtl"] .data_imagesContLeftRight {
     gap: 0.5rem;
   }
 
+  .sm\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .sm\:gap-\[26px\] {
+    gap: 26px;
+  }
+
   .sm\:rounded-\[30px\] {
     border-radius: 30px;
+  }
+
+  .sm\:rounded-\[32px\] {
+    border-radius: 32px;
   }
 
   .sm\:border {
@@ -3931,6 +3979,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
   .sm\:p-2 {
     padding: 0.5rem;
+  }
+
+  .sm\:p-6 {
+    padding: 1.5rem;
   }
 
   .sm\:px-4 {
@@ -3950,6 +4002,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
   .sm\:py-11 {
     padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .sm\:pb-11 {
     padding-bottom: 2.75rem;
   }
 
@@ -3980,16 +4036,32 @@ html[dir="rtl"] .data_imagesContLeftRight {
     margin-left: 0px;
   }
 
+  :is([dir="ltr"] .ltr\:sm\:mr-\[37px\]) {
+    margin-right: 37px;
+  }
+
   :is([dir="ltr"] .ltr\:sm\:pl-3) {
     padding-left: 0.75rem;
+  }
+
+  :is([dir="ltr"] .ltr\:sm\:pl-11) {
+    padding-left: 2.75rem;
   }
 
   :is([dir="rtl"] .rtl\:sm\:mr-0) {
     margin-right: 0px;
   }
 
+  :is([dir="rtl"] .rtl\:sm\:ml-\[37px\]) {
+    margin-left: 37px;
+  }
+
   :is([dir="rtl"] .rtl\:sm\:pr-3) {
     padding-right: 0.75rem;
+  }
+
+  :is([dir="rtl"] .rtl\:sm\:pr-11) {
+    padding-right: 2.75rem;
   }
 }
 
