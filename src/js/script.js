@@ -33,11 +33,20 @@ var banner = new Swiper(".banner", {
 });
 
 var courses = new Swiper(".courses", {
-  slidesPerView: 4.5,
+  slidesPerView: 1.2,
   loop:true,
   spaceBetween: 22,
   breakpoints: {
-    1200: {
+    630: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2.5,
+    },
+    1100: {
+      slidesPerView: 3.5,
+    },
+    1400: {
       slidesPerView: 4.5,
     }
   },
@@ -51,11 +60,20 @@ var courses = new Swiper(".courses", {
   },
 });
 var courses2 = new Swiper(".courses2", {
-  slidesPerView: 4.5,
+  slidesPerView: 1.2,
   loop:true,
   spaceBetween: 22,
   breakpoints: {
-    1200: {
+    630: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2.5,
+    },
+    1100: {
+      slidesPerView: 3.5,
+    },
+    1400: {
       slidesPerView: 4.5,
     }
   },
