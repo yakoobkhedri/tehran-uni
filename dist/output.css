@@ -1205,6 +1205,10 @@ video {
   margin-top: 9px;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .line-clamp-3 {
   overflow: hidden;
   display: -webkit-box;
@@ -2145,6 +2149,16 @@ video {
 .py-\[14px\] {
   padding-top: 14px;
   padding-bottom: 14px;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
 }
 
 .pb-0 {
@@ -3783,6 +3797,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     top: 14px;
   }
 
+  .sm\:-top-9 {
+    top: -2.25rem;
+  }
+
   .sm\:mx-2 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -3811,6 +3829,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
   .sm\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .sm\:mt-16 {
+    margin-top: 4rem;
   }
 
   .sm\:block {
@@ -3992,6 +4014,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     padding-bottom: 68px;
   }
 
+  .sm\:pt-0 {
+    padding-top: 0px;
+  }
+
   .sm\:text-\[13px\] {
     font-size: 13px;
   }
@@ -4099,6 +4125,11 @@ html[dir="rtl"] .data_imagesContLeftRight {
     order: -9999;
   }
 
+  .md\:mx-9 {
+    margin-left: 2.25rem;
+    margin-right: 2.25rem;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -4192,6 +4223,11 @@ html[dir="rtl"] .data_imagesContLeftRight {
   .md\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .md\:px-\[106px\] {
+    padding-left: 106px;
+    padding-right: 106px;
   }
 
   .md\:text-\[30px\] {

@@ -103,10 +103,17 @@ var govahi = new Swiper(".govahi", {
 var testimonials = new Swiper(".testimonials", {
   slidesPerView: 1,
   loop:true,
-  spaceBetween: 36,
+  spaceBetween: 8,
   breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
     1200: {
       slidesPerView: 4,
+      spaceBetween: 38,
     }
   },
   pagination: {
