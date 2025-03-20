@@ -128,19 +128,15 @@ var testimonials = new Swiper(".testimonials", {
 var blog = new Swiper(".blog", {
   slidesPerView: 1,
   loop:true,
-  spaceBetween: 50,
+  spaceBetween: 40,
   breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 50,
+    },
     1200: {
       slidesPerView: 3,
     }
-  },
-  pagination: {
-    el: ".swiper-pagination3",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
   },
 });
 
