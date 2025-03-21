@@ -4289,6 +4289,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     max-width: 243px;
   }
 
+  .md\:max-w-none {
+    max-width: none;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -4416,6 +4420,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     padding-left: 2.5rem;
   }
 
+  :is([dir="ltr"] .ltr\:md\:pl-custom) {
+    padding-left: calc((100% - 1392px) / 2);
+  }
+
   :is([dir="rtl"] .rtl\:md\:-left-4) {
     left: -1rem;
   }
@@ -4443,6 +4451,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
   :is([dir="rtl"] .rtl\:md\:pr-10) {
     padding-right: 2.5rem;
+  }
+
+  :is([dir="rtl"] .rtl\:md\:pr-custom) {
+    padding-right: calc((100% - 1392px) / 2);
   }
 }
 
