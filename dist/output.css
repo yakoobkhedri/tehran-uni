@@ -4267,6 +4267,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     height: 354px;
   }
 
+  .md\:min-h-\[340px\] {
+    min-height: 340px;
+  }
+
   .md\:w-auto {
     width: auto;
   }
