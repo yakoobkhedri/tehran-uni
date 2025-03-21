@@ -4329,6 +4329,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     gap: 1.5rem;
   }
 
+  .md\:overflow-visible {
+    overflow: visible;
+  }
+
   .md\:rounded-\[30px\] {
     border-radius: 30px;
   }
