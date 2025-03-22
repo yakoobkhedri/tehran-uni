@@ -3,55 +3,25 @@ const defaultStoryDuration = 7000;
 var storiesSwiperSm = new Swiper(".storiesSwiperSm", {
     changeDirection: 'rtl',
     slidesPerView: 3.3,
-    spaceBetween: 0,
+    spaceBetween: 40,
     loop:true,
     // speed: 200,
-    navigation: {
-        nextEl: '.custom-swiper-button-next',
-        prevEl: '.custom-swiper-button-prev',
-        enabled:false
-    },
     breakpoints: {
         // when window width is >= 992px
         1200: {
-            slidesPerView: 8,
-            navigation: {
-                nextEl: '.custom-swiper-button-next',
-                prevEl: '.custom-swiper-button-prev',
-                enabled:true
-            },
+            slidesPerView: 9,
         },
         992: {
-            slidesPerView: 8.3,
-            navigation: {
-                nextEl: '.custom-swiper-button-next',
-                prevEl: '.custom-swiper-button-prev',
-                enabled:true
-            },
+            slidesPerView: 8,
         },
         768: {
-            slidesPerView: 6.3,
-            navigation: {
-                nextEl: '.custom-swiper-button-next',
-                prevEl: '.custom-swiper-button-prev',
-                enabled:true
-            },
+            slidesPerView: 6,
         },
-        576: {
-            slidesPerView: 5.3,
-            navigation: {
-                nextEl: '.custom-swiper-button-next',
-                prevEl: '.custom-swiper-button-prev',
-                enabled:false
-            },
+        400: {
+            slidesPerView: 4,
         },
         380: {
-            slidesPerView: 4.3,
-            navigation: {
-                nextEl: '.custom-swiper-button-next',
-                prevEl: '.custom-swiper-button-prev',
-                enabled:false
-            },
+            slidesPerView: 3,
         }
     }
 });

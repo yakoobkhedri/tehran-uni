@@ -22,6 +22,7 @@ tab.forEach((item) => {
 
 var banner = new Swiper(".banner", {
   loop: true,
+  autoplay: true,
   spaceBetween: 90,
   pagination: {
     el: ".swiper-pagination1",
