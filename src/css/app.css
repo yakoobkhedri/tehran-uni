@@ -417,10 +417,10 @@ header.active #headerarrow path{
 }
 /* swiper effect */
 html[dir="ltr"] .data_imagesContLeftRight {
-  transform: translate(400px, 0);
+  transform: translate(0,100px);
 }
 html[dir="rtl"] .data_imagesContLeftRight {
-  transform: translate(-400px, 0);
+  transform: translate(0,100px);
 }
 .banner .swiper-slide img.data_imagesContLeftRight,
 .banner .swiper-slide a.data_imagesContBottomTop {
@@ -438,7 +438,7 @@ html[dir="rtl"] .data_imagesContLeftRight {
 /* hover */
 
 .btnHover:hover{
-  animation: jello-horizontal 0.9s both;
+  /* animation: jello-horizontal 0.9s both; */
 }
 @keyframes jello-horizontal {
   0% {

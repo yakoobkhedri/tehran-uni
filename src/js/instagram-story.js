@@ -1,13 +1,11 @@
 const defaultStoryDuration = 7000;
 // init stories swiper
-new Swiper('#storiesSwiperSm', {
+var storiesSwiperSm = new Swiper(".storiesSwiperSm", {
     changeDirection: 'rtl',
     slidesPerView: 3.3,
     spaceBetween: 0,
-    centeredSlides: true, // اسلاید وسطی در مرکز باشد
-    loop:false,
+    loop:true,
     // speed: 200,
-    freeMode:true,
     navigation: {
         nextEl: '.custom-swiper-button-next',
         prevEl: '.custom-swiper-button-prev',
