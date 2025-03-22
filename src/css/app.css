@@ -469,7 +469,11 @@ html[dir="rtl"] .data_imagesContLeftRight {
     transform: scale3d(1, 1, 1);
   }
 }
-
+@media (max-width: 1280px){
+  .rotate-xl{
+    transform: rotateY(180deg);
+  }
+}
 @media (max-width: 768px){
   .shadow-md-1{
     box-shadow: 0px 0px 20.4px 0px #0000001A !important;
