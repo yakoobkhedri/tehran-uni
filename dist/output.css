@@ -1631,6 +1631,10 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1717,6 +1721,10 @@ video {
 
 .gap-\[26px\] {
   gap: 26px;
+}
+
+.gap-\[34px\] {
+  gap: 34px;
 }
 
 .gap-x-0 {
