@@ -1735,10 +1735,6 @@ video {
   gap: 26px;
 }
 
-.gap-\[34px\] {
-  gap: 34px;
-}
-
 .gap-x-0 {
   -moz-column-gap: 0px;
        column-gap: 0px;
@@ -1749,12 +1745,21 @@ video {
        column-gap: 1rem;
 }
 
+.gap-x-\[34px\] {
+  -moz-column-gap: 34px;
+       column-gap: 34px;
+}
+
 .gap-y-5 {
   row-gap: 1.25rem;
 }
 
 .gap-y-6 {
   row-gap: 1.5rem;
+}
+
+.gap-y-\[30px\] {
+  row-gap: 30px;
 }
 
 .overflow-auto {
@@ -2929,6 +2934,10 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
 
 .shadow-14{
   box-shadow: 0px 0px 159.65px 0px #0000001A;
+}
+
+.shadow-15{
+  box-shadow: 0px -4.48px 107.45px -16.79px #0000001A;
 }
 
 .bg-blur-1{
