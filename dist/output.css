@@ -914,6 +914,10 @@ video {
   top: auto;
 }
 
+.\!left-5 {
+  left: 1.25rem !important;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -4303,6 +4307,18 @@ html[dir="rtl"] .data_imagesContLeftRight {
     top: 77px;
   }
 
+  .md\:\!left-\[20px\] {
+    left: 20px !important;
+  }
+
+  .md\:\!left-\[0px\] {
+    left: 0px !important;
+  }
+
+  .md\:\!left-0 {
+    left: 0px !important;
+  }
+
   .md\:order-first {
     order: -9999;
   }
@@ -4474,6 +4490,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
   .md\:pt-4 {
     padding-top: 1rem;
+  }
+
+  .md\:pt-1 {
+    padding-top: 0.25rem;
   }
 
   .md\:text-start {
