@@ -630,6 +630,10 @@ video {
   left: 0px !important;
 }
 
+.\!left-5 {
+  left: 1.25rem !important;
+}
+
 .\!right-auto {
   right: auto !important;
 }
@@ -912,10 +916,6 @@ video {
 
 .top-auto {
   top: auto;
-}
-
-.\!left-5 {
-  left: 1.25rem !important;
 }
 
 .-z-0 {
@@ -1400,6 +1400,10 @@ video {
   height: 60px;
 }
 
+.h-\[61px\] {
+  height: 61px;
+}
+
 .h-\[6px\] {
   height: 6px;
 }
@@ -1536,12 +1540,20 @@ video {
   width: 51px;
 }
 
+.w-\[61px\] {
+  width: 61px;
+}
+
 .w-\[90px\] {
   width: 90px;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-\[70px\] {
+  width: 70px;
 }
 
 .max-w-\[1536px\] {
@@ -1727,6 +1739,10 @@ video {
   gap: 34px;
 }
 
+.gap-14 {
+  gap: 3.5rem;
+}
+
 .gap-x-0 {
   -moz-column-gap: 0px;
        column-gap: 0px;
@@ -1815,6 +1831,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-\[22px\] {
+  border-radius: 22px;
 }
 
 .rounded-b-2xl {
@@ -3200,6 +3220,11 @@ html[dir="rtl"] .data_imagesContLeftRight {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:bg-secondary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 77 139 / var(--tw-bg-opacity));
+}
+
 .hover\:font-black:hover {
   font-weight: 900;
 }
@@ -3240,9 +3265,18 @@ html[dir="rtl"] .data_imagesContLeftRight {
   stroke: #dc2626;
 }
 
+.group:hover .group-hover\:stroke-white {
+  stroke: #fff;
+}
+
 .group:hover .group-hover\:text-primary {
   --tw-text-opacity: 1;
   color: rgb(6 156 223 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:shadow-2xl {
@@ -3253,10 +3287,6 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
 .group:active .group-active\:stroke-white {
   stroke: #fff;
-}
-
-:is([dir="ltr"] .ltr\:\!left-auto) {
-  left: auto !important;
 }
 
 :is([dir="ltr"] .ltr\:-bottom-\[18px\]) {
@@ -3488,6 +3518,11 @@ html[dir="rtl"] .data_imagesContLeftRight {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+:is([dir="ltr"] .ltr\:rotate-180) {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 :is([dir="ltr"] .ltr\:rotate-90) {
   --tw-rotate: 90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3547,6 +3582,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
 :is([dir="ltr"] .ltr\:pr-3) {
   padding-right: 0.75rem;
+}
+
+:is([dir="ltr"] .ltr\:font-MontserratBold) {
+  font-family: Montserrat-Bold;
 }
 
 :is([dir="ltr"] .ltr\:\[transform\:rotateY\(0deg\)\]) {
@@ -3793,6 +3832,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
   padding-right: 1rem;
 }
 
+:is([dir="rtl"] .rtl\:font-yekanBakhBold) {
+  font-family: YekanBakhFaNum-Bold;
+}
+
 @media (min-width: 365px) {
   .min-\[365px\]\:text-sm {
     font-size: 0.875rem;
@@ -4020,6 +4063,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
   .sm\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .sm\:gap-\[14px\] {
+    gap: 14px;
   }
 
   .sm\:gap-\[26px\] {
@@ -4299,6 +4346,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     bottom: 61% !important;
   }
 
+  .md\:\!left-0 {
+    left: 0px !important;
+  }
+
   .md\:\!left-\[-20px\] {
     left: -20px !important;
   }
@@ -4313,18 +4364,6 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
   .md\:top-\[77px\] {
     top: 77px;
-  }
-
-  .md\:\!left-\[20px\] {
-    left: 20px !important;
-  }
-
-  .md\:\!left-\[0px\] {
-    left: 0px !important;
-  }
-
-  .md\:\!left-0 {
-    left: 0px !important;
   }
 
   .md\:order-first {
@@ -4496,12 +4535,12 @@ html[dir="rtl"] .data_imagesContLeftRight {
     padding-bottom: 110px;
   }
 
-  .md\:pt-4 {
-    padding-top: 1rem;
-  }
-
   .md\:pt-1 {
     padding-top: 0.25rem;
+  }
+
+  .md\:pt-4 {
+    padding-top: 1rem;
   }
 
   .md\:text-start {
