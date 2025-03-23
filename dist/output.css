@@ -1540,8 +1540,8 @@ video {
   width: 51px;
 }
 
-.w-\[61px\] {
-  width: 61px;
+.w-\[70px\] {
+  width: 70px;
 }
 
 .w-\[90px\] {
@@ -1550,10 +1550,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[70px\] {
-  width: 70px;
 }
 
 .max-w-\[1536px\] {
@@ -1691,6 +1687,10 @@ video {
   gap: 0.375rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1737,10 +1737,6 @@ video {
 
 .gap-\[34px\] {
   gap: 34px;
-}
-
-.gap-14 {
-  gap: 3.5rem;
 }
 
 .gap-x-0 {
@@ -1797,6 +1793,10 @@ video {
   border-radius: 20px;
 }
 
+.rounded-\[22px\] {
+  border-radius: 22px;
+}
+
 .rounded-\[26px\] {
   border-radius: 26px;
 }
@@ -1831,10 +1831,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-\[22px\] {
-  border-radius: 22px;
 }
 
 .rounded-b-2xl {
@@ -3089,6 +3085,21 @@ header.active #headerarrow path{
   }
 }
 
+/* pagination */
+
+#pagination ul ul li a{
+  color: #404040;
+  opacity: 40%;
+  transition: all .4s;
+  padding:12px;
+}
+
+#pagination ul ul li a:hover,#pagination ul ul li a.active{
+  color: #069CDF;
+  opacity: 100%;
+  font-weight: 600;
+}
+
 /*  */
 
 :is([dir="ltr"] .ltrReverse) {
@@ -3220,11 +3231,6 @@ html[dir="rtl"] .data_imagesContLeftRight {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:bg-secondary:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 77 139 / var(--tw-bg-opacity));
-}
-
 .hover\:font-black:hover {
   font-weight: 900;
 }
@@ -3265,18 +3271,9 @@ html[dir="rtl"] .data_imagesContLeftRight {
   stroke: #dc2626;
 }
 
-.group:hover .group-hover\:stroke-white {
-  stroke: #fff;
-}
-
 .group:hover .group-hover\:text-primary {
   --tw-text-opacity: 1;
   color: rgb(6 156 223 / var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:shadow-2xl {
@@ -3518,11 +3515,6 @@ html[dir="rtl"] .data_imagesContLeftRight {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-:is([dir="ltr"] .ltr\:rotate-180) {
-  --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 :is([dir="ltr"] .ltr\:rotate-90) {
   --tw-rotate: 90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3582,10 +3574,6 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
 :is([dir="ltr"] .ltr\:pr-3) {
   padding-right: 0.75rem;
-}
-
-:is([dir="ltr"] .ltr\:font-MontserratBold) {
-  font-family: Montserrat-Bold;
 }
 
 :is([dir="ltr"] .ltr\:\[transform\:rotateY\(0deg\)\]) {
@@ -3832,10 +3820,6 @@ html[dir="rtl"] .data_imagesContLeftRight {
   padding-right: 1rem;
 }
 
-:is([dir="rtl"] .rtl\:font-yekanBakhBold) {
-  font-family: YekanBakhFaNum-Bold;
-}
-
 @media (min-width: 365px) {
   .min-\[365px\]\:text-sm {
     font-size: 0.875rem;
@@ -4063,10 +4047,6 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
   .sm\:gap-5 {
     gap: 1.25rem;
-  }
-
-  .sm\:gap-\[14px\] {
-    gap: 14px;
   }
 
   .sm\:gap-\[26px\] {

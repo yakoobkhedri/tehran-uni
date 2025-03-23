@@ -398,6 +398,18 @@ header.active #headerarrow path{
     width: 100%;
   }
 }
+/* pagination */
+#pagination ul ul li a{
+  color: #404040;
+  opacity: 40%;
+  transition: all .4s;
+  padding:12px;
+}
+#pagination ul ul li a:hover,#pagination ul ul li a.active{
+  color: #069CDF;
+  opacity: 100%;
+  font-weight: 600;
+}
 /*  */
 .ltrReverse{
   @apply ltr:[transform:rotateY(180deg)];
