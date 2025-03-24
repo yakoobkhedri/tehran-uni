@@ -282,6 +282,9 @@ linear-gradient(0deg, #014D8B 33.52%, rgba(1, 77, 139, 0.48) 130.87%);
 .shadow-15{
   box-shadow: 0px -4.48px 107.45px -16.79px #0000001A;
 }
+.shadow-16{
+  box-shadow: 0px 0px 199.4px 0px #00000063;
+}
 .bg-blur-1{
   background-color: #78787859;
   backdrop-filter: blur(13.260251998901367px)
