@@ -1,7 +1,9 @@
 // tab
 
 let tab = Array.from(document.querySelectorAll('.tab'));
+let tab2 = Array.from(document.querySelectorAll('.tab2'));
 let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
+let tabContent2 = Array.from(document.querySelectorAll('.tabContent2 > div'));
 
 tab.forEach((item) => {
   item.addEventListener('click', function() {
@@ -9,6 +11,21 @@ tab.forEach((item) => {
       item.classList.add('active');
       let tabId = item.dataset.id;
       tabContent.forEach((content) => {
+          let contentId = content.dataset.id;
+          if (tabId === contentId) {
+              content.classList.remove('hidden');
+          } else {
+            content.classList.add('hidden');
+          }
+      })
+  })
+})
+tab2.forEach((item) => {
+  item.addEventListener('click', function() {
+    tab2.forEach((items) => {items.classList.remove('active')});
+      item.classList.add('active');
+      let tabId = item.dataset.id;
+      tabContent2.forEach((content) => {
           let contentId = content.dataset.id;
           if (tabId === contentId) {
               content.classList.remove('hidden');
