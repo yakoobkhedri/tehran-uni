@@ -159,3 +159,15 @@ var blog = new Swiper(".blog", {
   },
 });
 
+
+// acordion
+
+let acordionBtn = Array.from(document.getElementsByClassName('acordionBtn'));
+
+acordionBtn.forEach((item) => {
+  item.addEventListener('click', function () {
+    item.parentElement.classList.toggle('active');
+    item.classList.toggle('active');
+    item.nextElementSibling.classList.toggle('active');
+  })
+})

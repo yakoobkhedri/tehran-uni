@@ -338,7 +338,38 @@ header.active #headerarrow path{
 .dropdownBtn .arrowSvg.active,.dropdownBtn2 .arrowSvg.active {
   transform: rotate(0);
 }
-.dropdownContent,.dropdownContent2,.accordionContent {
+.acordionBox.active{
+  box-shadow: 0px 0px 200px 0px #0000001A;
+  overflow: hidden;
+}
+.acordionBtn.active{
+  background-color: #069CDF;
+  color: white;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.acordionBtn.active svg.arrow1 path{
+  fill: #069CDF;
+}
+.acordionBtn.active div.arrow2{
+  background-color: #069CDF;
+}
+.acordionBtn svg path,.acordionBtn svg circle,.acordionBox,.acordionBtn div.arrow2{
+  transition: all .4s;
+}
+.acordionBtn.active svg.circle circle{
+  fill: white;
+}
+.acordionBtn.active svg.arrow path{
+  stroke: white;
+}
+.acordionBtn.active img.bg{
+  opacity: 0;
+}
+.acordionBtn.active img.bg2{
+ opacity: 100%;
+}
+.dropdownContent,.dropdownContent2,.accordionContent,.accordionContent2 {
   padding: 0;
   max-height: 0;
   overflow: hidden;
