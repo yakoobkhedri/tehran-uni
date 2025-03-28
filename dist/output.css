@@ -1317,6 +1317,14 @@ video {
   margin-bottom: 1rem;
 }
 
+.mt-11 {
+  margin-top: 2.75rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -2059,6 +2067,14 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-\[15p\] {
+  border-radius: 15p;
+}
+
+.rounded-\[8px\] {
+  border-radius: 8px;
 }
 
 .rounded-b-2xl {
@@ -4678,6 +4694,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     height: 350px;
   }
 
+  .sm\:h-\[52px\] {
+    height: 52px;
+  }
+
   .sm\:min-h-full {
     min-height: 100%;
   }
@@ -4813,6 +4833,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
   .sm\:rounded-\[32px\] {
     border-radius: 32px;
+  }
+
+  .sm\:rounded-\[15px\] {
+    border-radius: 15px;
   }
 
   .sm\:rounded-b-\[30px\] {
@@ -5233,6 +5257,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -5305,6 +5333,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     padding: 1.5rem;
   }
 
+  .md\:p-\[42px\] {
+    padding: 42px;
+  }
+
   .md\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -5353,6 +5385,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
   .md\:pt-4 {
     padding-top: 1rem;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
   }
 
   .md\:text-start {
@@ -5519,6 +5555,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     margin-bottom: 1.75rem;
   }
 
+  .lg\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -5589,6 +5629,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     padding: 0.75rem;
   }
 
+  .lg\:p-\[42px\] {
+    padding: 42px;
+  }
+
   .lg\:px-11 {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
@@ -5620,6 +5664,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
   .lg\:pt-\[42px\] {
     padding-top: 42px;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
   }
 
   .lg\:text-\[15px\] {
@@ -5864,6 +5912,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     gap: 1.5rem;
   }
 
+  .xl\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .xl\:gap-x-11 {
     -moz-column-gap: 2.75rem;
          column-gap: 2.75rem;
@@ -5881,6 +5933,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
   .xl\:px-14 {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
+  }
+
+  .xl\:pt-0 {
+    padding-top: 0px;
   }
 
   :is([dir="ltr"] .ltr\:xl\:left-\[25\%\]) {
