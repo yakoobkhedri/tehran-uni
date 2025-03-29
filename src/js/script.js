@@ -158,7 +158,19 @@ var blog = new Swiper(".blog", {
     }
   },
 });
-
+var gerayesh = new Swiper(".gerayesh", {
+  slidesPerView: 1,
+  loop:true,
+  spaceBetween: 40,
+  pagination: {
+    el: ".swiper-pagination4",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 // acordion
 
