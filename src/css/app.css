@@ -561,3 +561,8 @@ html[dir="rtl"] .data_imagesContLeftRight {
    font-size: 10px;
   }
 }
+@media (max-width: 660px){
+.lineafter::after {
+  content: none;
+}
+}
