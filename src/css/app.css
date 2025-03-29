@@ -411,6 +411,17 @@ header.active #headerarrow path{
 .tab2:hover p,.tab2.active p{
   color: white;
 }
+.tab3.active{
+  background-color: #069CDF;
+  color: white;
+  box-shadow: 0px 0px 39.4px 0px #069CDF61;
+  border: 1px solid #069CDF;
+  font-weight: bold;
+}
+.tab3.active svg{
+  opacity: 100%;
+  visibility: visible;
+}
 /* disabled button */
 .btn:disabled{
   opacity: 50%;
