@@ -854,8 +854,8 @@ video {
   bottom: 7rem;
 }
 
-.bottom-4 {
-  bottom: 1rem;
+.bottom-3 {
+  bottom: 0.75rem;
 }
 
 .bottom-\[16\%\] {
@@ -968,10 +968,6 @@ video {
 
 .top-auto {
   top: auto;
-}
-
-.bottom-3 {
-  bottom: 0.75rem;
 }
 
 .-z-0 {
@@ -1323,6 +1319,10 @@ video {
 
 .mt-\[9px\] {
   margin-top: 9px;
+}
+
+.mt-\[60px\] {
+  margin-top: 60px;
 }
 
 .line-clamp-2 {
@@ -1928,6 +1928,10 @@ video {
 
 .gap-\[5px\] {
   gap: 5px;
+}
+
+.gap-\[14px\] {
+  gap: 14px;
 }
 
 .gap-x-0 {
@@ -3827,8 +3831,8 @@ html[dir="rtl"] .data_imagesContLeftRight {
   left: 0.5rem;
 }
 
-:is([dir="ltr"] .ltr\:left-4) {
-  left: 1rem;
+:is([dir="ltr"] .ltr\:left-3) {
+  left: 0.75rem;
 }
 
 :is([dir="ltr"] .ltr\:left-5) {
@@ -3979,8 +3983,8 @@ html[dir="rtl"] .data_imagesContLeftRight {
   right: auto;
 }
 
-:is([dir="ltr"] .ltr\:left-3) {
-  left: 0.75rem;
+:is([dir="ltr"] .ltr\:left-\[36\%\]) {
+  left: 36%;
 }
 
 :is([dir="ltr"] .ltr\:-ml-2) {
@@ -4226,8 +4230,8 @@ html[dir="rtl"] .data_imagesContLeftRight {
   right: 0.5rem;
 }
 
-:is([dir="rtl"] .rtl\:right-4) {
-  right: 1rem;
+:is([dir="rtl"] .rtl\:right-3) {
+  right: 0.75rem;
 }
 
 :is([dir="rtl"] .rtl\:right-5) {
@@ -4310,8 +4314,8 @@ html[dir="rtl"] .data_imagesContLeftRight {
   right: 9%;
 }
 
-:is([dir="rtl"] .rtl\:right-3) {
-  right: 0.75rem;
+:is([dir="rtl"] .rtl\:right-\[36\%\]) {
+  right: 36%;
 }
 
 :is([dir="rtl"] .rtl\:ml-1) {
@@ -5187,6 +5191,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -5287,6 +5295,21 @@ html[dir="rtl"] .data_imagesContLeftRight {
   .md\:py-7 {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
+  }
+
+  .md\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .md\:py-\[18px\] {
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 
   .md\:pb-5 {
