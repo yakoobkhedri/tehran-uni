@@ -402,7 +402,7 @@ header.active #headerarrow path{
   background-color: #069CDF;
   border: 1px solid #069CDF;
 }
-.tab2 svg path,.tab2 p{
+.tab2 svg path,.tab2 p,.tab4 p{
   transition: all .4s;
 }
 .tab2:hover svg path,.tab2.active svg path{
@@ -421,6 +421,19 @@ header.active #headerarrow path{
 .tab3.active svg{
   opacity: 100%;
   visibility: visible;
+}
+.tab4.active{
+  background-color: #069CDF;
+}
+.tab4.active p{
+  color: white;
+  opacity: 100%;
+}
+.tab4.active > div{
+ background-color: #FFFFFF47;
+}
+.tab4.active svg path{
+  fill: white;
 }
 /* disabled button */
 .btn:disabled{

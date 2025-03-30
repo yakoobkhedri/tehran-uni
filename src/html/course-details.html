@@ -13,8 +13,8 @@
 
   <div class="min-[1160px]:hidden" id="overlay"></div>
 
-  <!-- contact modal -->
-  <div class="modal">
+   <!-- course buy && contact modal -->
+   <div class="modal">
     <div style="visibility: hidden; opacity: 0;" data-button="contact-modal"
       class="flex modal-container bg-black/60 justify-center backdrop-blur-sm fixed inset-0 items-center overflow-auto px-4 sm:px-7 transition-all z-[100]">
       <div
@@ -97,6 +97,253 @@
         <button class="p-2 absolute close-button group left-4 ltr:left-auto ltr:right-4 top-4">
           <svg class="w-4" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="group-hover:stroke-red-600 transition" opacity="0.3" d="M16 2L2 16M2 2L16 16" stroke="black"
+              stroke-width="2.15385" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div style="visibility: hidden; opacity: 0;" data-button="course-modal"
+      class="modal-container bg-black/60 backdrop-blur-sm fixed inset-0 pt-8 overflow-auto px-4 sm:px-7 transition-all z-[100]">
+      <div class="bg-white mb-8 modal-content py-7 sm:px-6 px-3 rounded-[15px] w-full max-w-[751px] mx-auto relative">
+        <div class="flex items-center gap-2">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.5"
+              d="M4.727 2.733C5.033 2.425 5.461 2.225 6.271 2.115C7.105 2.002 8.209 2 9.793 2H14.207C15.791 2 16.895 2.002 17.729 2.115C18.539 2.225 18.967 2.425 19.273 2.733C19.578 3.041 19.777 3.473 19.886 4.29C19.998 5.13 20 6.245 20 7.842V18H7.426C6.342 18 5.964 18.006 5.673 18.068C5.16 18.178 4.713 18.415 4.388 18.735C4.278 18.843 4.224 18.896 4.097 19.24C4.03698 19.3862 4.00411 19.542 4 19.7V7.842C4 6.245 4.002 5.131 4.114 4.29C4.223 3.474 4.422 3.041 4.727 2.733Z"
+              fill="#069CDF" />
+            <path
+              d="M20 18H7.42598C6.34198 18 5.96398 18.006 5.67298 18.068C5.15998 18.178 4.71298 18.415 4.38798 18.735C4.27798 18.843 4.22398 18.896 4.09698 19.24C3.96998 19.584 3.98998 19.729 4.03098 20.02L4.05298 20.17C4.16298 20.823 4.36298 21.168 4.66898 21.414C4.97598 21.66 5.40598 21.821 6.21898 21.908C7.05598 21.998 8.16498 22 9.75498 22H14.185C15.775 22 16.885 21.999 17.721 21.908C18.534 21.821 18.964 21.66 19.271 21.414C19.471 21.254 19.625 21.052 19.738 20.75H7.99998C7.80107 20.75 7.6103 20.671 7.46965 20.5303C7.329 20.3897 7.24998 20.1989 7.24998 20C7.24998 19.8011 7.329 19.6103 7.46965 19.4697C7.6103 19.329 7.80107 19.25 7.99998 19.25H19.975C19.993 18.887 19.998 18.474 20 18ZM7.24998 7C7.24998 6.80109 7.329 6.61032 7.46965 6.46967C7.6103 6.32902 7.80107 6.25 7.99998 6.25H16C16.1989 6.25 16.3897 6.32902 16.5303 6.46967C16.671 6.61032 16.75 6.80109 16.75 7C16.75 7.19891 16.671 7.38968 16.5303 7.53033C16.3897 7.67098 16.1989 7.75 16 7.75H7.99998C7.80107 7.75 7.6103 7.67098 7.46965 7.53033C7.329 7.38968 7.24998 7.19891 7.24998 7ZM7.99998 9.75C7.80107 9.75 7.6103 9.82902 7.46965 9.96967C7.329 10.1103 7.24998 10.3011 7.24998 10.5C7.24998 10.6989 7.329 10.8897 7.46965 11.0303C7.6103 11.171 7.80107 11.25 7.99998 11.25H13C13.1989 11.25 13.3897 11.171 13.5303 11.0303C13.671 10.8897 13.75 10.6989 13.75 10.5C13.75 10.3011 13.671 10.1103 13.5303 9.96967C13.3897 9.82902 13.1989 9.75 13 9.75H7.99998Z"
+              fill="#069CDF" />
+          </svg>
+          <p class="text-lg text-black">
+            <span class="font-bold">خرید</span> دوره
+          </p>
+        </div>
+        <img alt="line" src="../img/Shape (7).png" class="block mt-3">
+        <form>
+          <div
+            class="mt-6 p-3 rounded-[15px] bg-[#ADDBF0] flex items-center justify-center gap-2.5 text-xs text-primary">
+            <svg class="flex-shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.5"
+                d="M2 6.94466C2 4.81266 2 3.74666 2.252 3.38799C2.50333 3.02999 3.50533 2.68666 5.51 2.00066L5.892 1.86999C6.93667 1.51199 7.45867 1.33333 8 1.33333C8.54133 1.33333 9.06333 1.51199 10.108 1.86999L10.49 2.00066C12.4947 2.68666 13.4967 3.02999 13.748 3.38799C14 3.74666 14 4.81333 14 6.94466V7.99399C14 11.7527 11.174 13.5773 9.40067 14.3513C8.92 14.5613 8.68 14.6667 8 14.6667C7.32 14.6667 7.08 14.5613 6.59933 14.3513C4.826 13.5767 2 11.7533 2 7.99399V6.94466Z"
+                fill="#069CDF" />
+              <path
+                d="M7.99992 4.83333C8.13253 4.83333 8.2597 4.88601 8.35347 4.97977C8.44724 5.07354 8.49992 5.20072 8.49992 5.33333V7.99999C8.49992 8.1326 8.44724 8.25978 8.35347 8.35355C8.2597 8.44732 8.13253 8.49999 7.99992 8.49999C7.86731 8.49999 7.74013 8.44732 7.64637 8.35355C7.5526 8.25978 7.49992 8.1326 7.49992 7.99999V5.33333C7.49992 5.20072 7.5526 5.07354 7.64637 4.97977C7.74013 4.88601 7.86731 4.83333 7.99992 4.83333ZM7.99992 10.6667C8.17673 10.6667 8.3463 10.5964 8.47132 10.4714C8.59635 10.3464 8.66659 10.1768 8.66659 9.99999C8.66659 9.82318 8.59635 9.65361 8.47132 9.52859C8.3463 9.40357 8.17673 9.33333 7.99992 9.33333C7.82311 9.33333 7.65354 9.40357 7.52851 9.52859C7.40349 9.65361 7.33325 9.82318 7.33325 9.99999C7.33325 10.1768 7.40349 10.3464 7.52851 10.4714C7.65354 10.5964 7.82311 10.6667 7.99992 10.6667Z"
+                fill="#069CDF" />
+            </svg>
+            <p>نحوه خرید و پرداخت هزینه دوره خود را انتخاب کنید.</p>
+          </div>
+          <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-[30px] pb-8 border-b-2 border-dashed">
+            <div data-id="1" class="active relative tab4 rounded-[20px] transition cursor-pointer bg-[#F5F6F8] p-5">
+              <input checked name="buy" type="radio"
+                class="absolute cursor-pointer z-1 w-full h-full opacity-0 inset-0">
+              <div class="w-[68px] h-[68px] rounded-full mx-auto bg-white flex-center">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.5"
+                    d="M4.758 10.758C6.0225 9.49201 7.845 9.13801 10.878 9.03901L13.128 9.00301C13.716 9.00001 14.34 8.99901 15 9.00001H21C21.662 9.00001 22.286 9.00101 22.872 9.00301L25.122 9.03901C28.155 9.13801 29.9775 9.49201 31.242 10.758C33 12.5145 33 15.3435 33 21C33 26.6565 33 29.4855 31.242 31.242C29.484 32.9985 26.6565 33 21 33H15C9.3435 33 6.5145 33 4.758 31.242C3.0015 29.484 3 26.6565 3 21C3 15.3435 3 12.5145 4.758 10.758Z"
+                    fill="#069CDF" />
+                  <path
+                    d="M19.1249 15C19.1249 14.7016 19.0064 14.4155 18.7954 14.2045C18.5844 13.9935 18.2983 13.875 17.9999 13.875C17.7016 13.875 17.4154 13.9935 17.2044 14.2045C16.9935 14.4155 16.8749 14.7016 16.8749 15V15.015C15.2414 15.426 13.8749 16.7145 13.8749 18.4995C13.8749 20.685 15.9224 22.125 17.9999 22.125C19.2359 22.125 19.8749 22.9245 19.8749 23.5005C19.8749 24.0765 19.2359 24.8745 17.9999 24.8745C16.7639 24.8745 16.1249 24.0765 16.1249 23.5005C16.1249 23.2021 16.0064 22.916 15.7954 22.705C15.5844 22.494 15.2983 22.3755 14.9999 22.3755C14.7016 22.3755 14.4154 22.494 14.2044 22.705C13.9935 22.916 13.8749 23.2021 13.8749 23.5005C13.8749 25.2855 15.2414 26.5725 16.8749 26.985V27C16.8749 27.2984 16.9935 27.5845 17.2044 27.7955C17.4154 28.0065 17.7016 28.125 17.9999 28.125C18.2983 28.125 18.5844 28.0065 18.7954 27.7955C19.0064 27.5845 19.1249 27.2984 19.1249 27V26.985C20.7584 26.574 22.1249 25.2855 22.1249 23.5005C22.1249 21.315 20.0774 19.875 17.9999 19.875C16.7639 19.875 16.1249 19.0755 16.1249 18.4995C16.1249 17.9235 16.7639 17.1255 17.9999 17.1255C19.2359 17.1255 19.8749 17.9235 19.8749 18.4995C19.8749 18.7979 19.9935 19.084 20.2044 19.295C20.4154 19.506 20.7016 19.6245 20.9999 19.6245C21.2983 19.6245 21.5844 19.506 21.7954 19.295C22.0064 19.084 22.1249 18.7979 22.1249 18.4995C22.1249 16.7145 20.7584 15.426 19.1249 15.015V15ZM18.0779 1.875H17.9219C16.5749 1.875 15.4499 1.875 14.5589 1.995C13.6169 2.121 12.7664 2.4 12.0839 3.0825C11.3999 3.7665 11.1209 4.617 10.9949 5.5575C10.9094 6.198 10.8854 7.7265 10.8779 9.0375L13.1279 9.003C13.1354 7.7325 13.1579 6.366 13.2254 5.8575C13.3184 5.166 13.4789 4.869 13.6754 4.674C13.8719 4.479 14.1659 4.3185 14.8589 4.224C15.5834 4.128 16.5539 4.125 17.9999 4.125C19.4459 4.125 20.4179 4.128 21.1424 4.2255C21.8339 4.3185 22.1309 4.479 22.3259 4.6755C22.5209 4.872 22.6829 5.166 22.7759 5.8575C22.8434 6.3675 22.8659 7.7325 22.8719 9.003L25.1219 9.039C25.1159 7.7265 25.0919 6.198 25.0049 5.559C24.8789 4.617 24.5999 3.7665 23.9174 3.084C23.2334 2.4 22.3829 2.121 21.4424 1.995C20.5499 1.875 19.4264 1.875 18.0779 1.875Z"
+                    fill="#069CDF" />
+                </svg>
+              </div>
+              <p class="sm:text-[28px] text-xl text-center font-extrabold text-black opacity-50 mt-2.5">خرید نقدی</p>
+              <p class="text-center text-black text-sm sm:text-base opacity-50">تعداد پرداخت کامل هزینه</p>
+            </div>
+            <div data-id="2" class="tab4 relative rounded-[20px] transition cursor-pointer bg-[#F5F6F8] p-5">
+              <input name="buy" type="radio" class="absolute cursor-pointer z-1 w-full h-full opacity-0 inset-0">
+              <div class="w-[68px] h-[68px] rounded-full mx-auto bg-white flex-center">
+                <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.5"
+                    d="M9.39 32.582H9C7.5855 32.582 6.879 32.582 6.4395 32.1425C6 31.706 6 30.998 6 29.5835V27.9155C6 27.1385 6 26.75 6.1995 26.402C6.399 26.054 6.7005 25.88 7.3035 25.529C11.2725 23.2205 16.908 21.9215 20.6685 24.164C20.9215 24.315 21.1465 24.499 21.3435 24.716C21.5453 24.9366 21.7009 25.1955 21.8009 25.4772C21.9009 25.759 21.9433 26.058 21.9257 26.3565C21.9081 26.6549 21.8307 26.9469 21.6983 27.2149C21.5658 27.483 21.3809 27.7217 21.1545 27.917C20.9741 28.0883 20.754 28.212 20.514 28.277C20.694 28.256 20.8665 28.2325 21.0315 28.2065C22.398 27.989 23.5455 27.257 24.5955 26.4635L27.3075 24.416C27.7916 24.0647 28.3744 23.8756 28.9725 23.8756C29.5706 23.8756 30.1534 24.0647 30.6375 24.416C31.497 25.0655 31.761 26.135 31.2165 27.008C30.582 28.025 29.688 29.3255 28.83 30.1205C27.972 30.9155 26.691 31.6265 25.647 32.1305C24.489 32.69 23.211 33.011 21.9105 33.2225C19.2735 33.6485 16.5255 33.5825 13.9155 33.0455C12.4265 32.739 10.9102 32.5827 9.39 32.582Z"
+                    fill="#069CDF" />
+                  <path
+                    d="M9.87892 4.37901C9.32842 4.92951 9.12292 5.68851 9.04642 6.87501C9.92571 6.86297 10.7656 6.50822 11.3872 5.88628C12.0089 5.26433 12.3633 4.4243 12.3749 3.54501C11.1899 3.62301 10.4294 3.82851 9.87892 4.37901ZM26.1209 4.37901C25.5704 3.82851 24.8114 3.62301 23.6249 3.54651C23.637 4.4258 23.9917 5.26566 24.6137 5.88733C25.2356 6.509 26.0756 6.86337 26.9549 6.87501C26.8769 5.69001 26.6714 4.92951 26.1209 4.37901ZM26.1209 14.621C25.5704 15.1715 24.8114 15.377 23.6249 15.4535C23.637 14.5742 23.9917 13.7344 24.6137 13.1127C25.2356 12.491 26.0756 12.1367 26.9549 12.125C26.8769 13.31 26.6714 14.0705 26.1209 14.621ZM9.87892 14.621C10.4294 15.1715 11.1884 15.377 12.3749 15.4535C12.3629 14.5742 12.0081 13.7344 11.3862 13.1127C10.7642 12.491 9.92421 12.1367 9.04492 12.125C9.12292 13.31 9.32842 14.0705 9.87892 14.621Z"
+                    fill="#069CDF" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9 9.125C10.4918 9.125 11.9226 8.53237 12.9775 7.47748C14.0324 6.42258 14.625 4.99184 14.625 3.5H21.375C21.375 4.99184 21.9676 6.42258 23.0225 7.47748C24.0774 8.53237 25.5082 9.125 27 9.125V9.875C25.5082 9.875 24.0774 10.4676 23.0225 11.5225C21.9676 12.5774 21.375 14.0082 21.375 15.5H14.625C14.625 14.0082 14.0324 12.5774 12.9775 11.5225C11.9226 10.4676 10.4918 9.875 9 9.875V9.125ZM18 11C18.3978 11 18.7794 10.842 19.0607 10.5607C19.342 10.2794 19.5 9.89782 19.5 9.5C19.5 9.10218 19.342 8.72064 19.0607 8.43934C18.7794 8.15804 18.3978 8 18 8C17.6022 8 17.2206 8.15804 16.9393 8.43934C16.658 8.72064 16.5 9.10218 16.5 9.5C16.5 9.89782 16.658 10.2794 16.9393 10.5607C17.2206 10.842 17.6022 11 18 11Z"
+                    fill="#069CDF" />
+                </svg>
+              </div>
+              <p class="sm:text-[28px] text-xl text-center font-extrabold text-black opacity-50 mt-2.5">خرید قسطی</p>
+              <p class="text-center text-black text-sm sm:text-base opacity-50">پرداخت پیش پرداخت و قسطی</p>
+            </div>
+          </div>
+          <div class="tabContent4 mt-7">
+            <div data-id="1">
+              <div class="grid sm:grid-cols-2 md:grid-cols-4 sm:gap-5 gap-3">
+                <div
+                  class="rounded-[15px] border border-[#00000026] transition text-center py-8 px-3 hover:bg-secondary group">
+                  <p class="text-sm text-black opacity-50 group-hover:text-white transition">مبلغ کل دوره</p>
+                  <p class="mt-1 font-bold text-primary group-hover:text-white transition">۲۰،۰۰۰،۰۰۰ تومان</p>
+                </div>
+                <div
+                  class="rounded-[15px] border border-[#00000026] transition text-center py-8 px-3 hover:bg-secondary group">
+                  <p class="text-sm text-black opacity-50 group-hover:text-white transition">مبلغ پیش پرداخت</p>
+                  <p class="mt-1 font-bold text-primary group-hover:text-white transition">۷،۵۰۰،۰۰۰ تومان</p>
+                </div>
+                <div
+                  class="rounded-[15px] border border-[#00000026] transition text-center py-8 px-3 hover:bg-secondary group">
+                  <p class="text-sm text-black opacity-50 group-hover:text-white transition">تعداد کل اقساط</p>
+                  <p class="mt-1 font-bold group-hover:text-white transition">۲۰</p>
+                </div>
+                <div
+                  class="rounded-[15px] border border-[#00000026] transition text-center py-8 px-3 hover:bg-secondary group">
+                  <p class="text-sm text-black opacity-50 group-hover:text-white transition">مبلغ هر قسط</p>
+                  <p class="mt-1 font-bold group-hover:text-white transition">۱،۴۵۰،۰۰۰ تومان</p>
+                </div>
+              </div>
+              <div class="mt-1">
+                <div
+                  class="grid grid-cols-3 gap-1 opacity-50 text-xs sm:text-base sm:p-5 py-4 px-3 border-b border-[#00000040]">
+                  <div>شماره</div>
+                  <div>مبلغ قسط</div>
+                  <div>تاریخ سررسید قسط</div>
+                </div>
+                <div>
+                  <div
+                    class="grid grid-cols-3 sm:p-5 py-4 px-3 gap-1 text-xs sm:text-sm font-bold rounded-[15px] even:bg-[#F5F6F8] text-black">
+                    <div>۱</div>
+                    <div>۳۵۰،۰۰۰ تومان</div>
+                    <div>۱ اردیبهشت ۱۴۰۳</div>
+                  </div>
+                  <div
+                    class="grid grid-cols-3 sm:p-5 py-4 px-3 gap-1 text-xs sm:text-sm font-bold rounded-[15px] even:bg-[#F5F6F8] text-black">
+                    <div>2</div>
+                    <div>۳۵۰،۰۰۰ تومان</div>
+                    <div>۱ اردیبهشت ۱۴۰۳</div>
+                  </div>
+                  <div
+                    class="grid grid-cols-3 sm:p-5 py-4 px-3 gap-1 text-xs sm:text-sm font-bold rounded-[15px] even:bg-[#F5F6F8] text-black">
+                    <div>3</div>
+                    <div>۳۵۰،۰۰۰ تومان</div>
+                    <div>۱ اردیبهشت ۱۴۰۳</div>
+                  </div>
+                  <div
+                    class="grid grid-cols-3 sm:p-5 py-4 px-3 gap-1 text-xs sm:text-sm font-bold rounded-[15px] even:bg-[#F5F6F8] text-black">
+                    <div>4</div>
+                    <div>۳۵۰،۰۰۰ تومان</div>
+                    <div>۱ اردیبهشت ۱۴۰۳</div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="mt-8 bg-primary text-sm sm:text-base flex items-center justify-center gap-2 rounded-[15px] h-[50px] text-white font-black">
+                <p>ادامه مراحل خرید قسطی</p>
+                <svg class="ltrReverse flex-shrink-0" width="17" height="12" viewBox="0 0 17 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.5"
+                    d="M15.5836 6.66296C15.7594 6.66296 15.9281 6.59311 16.0524 6.46878C16.1767 6.34445 16.2466 6.17583 16.2466 6C16.2466 5.82417 16.1767 5.65554 16.0524 5.53121C15.9281 5.40688 15.7594 5.33704 15.5836 5.33704V6.66296ZM15.5836 5.33704H1.44043V6.66296H15.5836V5.33704Z"
+                    fill="white"></path>
+                  <path d="M6.74412 0.696411L1.44043 6.0001L6.74412 11.3038" stroke="white" stroke-width="1.32592"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </a>
+            </div>
+            <div data-id="2" class="hidden">
+              <div class="flex items-center gap-4 text-black font-bold mb-4">
+                <svg class="flex-shrink-0" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect opacity="0.3" width="40" height="40" rx="8" fill="#069CDF" />
+                  <path opacity="0.5"
+                    d="M14.26 29.388H14C13.057 29.388 12.586 29.388 12.293 29.095C12 28.804 12 28.332 12 27.389V26.277C12 25.759 12 25.5 12.133 25.268C12.266 25.036 12.467 24.92 12.869 24.686C15.515 23.147 19.272 22.281 21.779 23.776C21.9477 23.8766 22.0977 23.9993 22.229 24.144C22.3636 24.291 22.4672 24.4636 22.5339 24.6514C22.6006 24.8393 22.6289 25.0386 22.6171 25.2376C22.6054 25.4366 22.5538 25.6312 22.4655 25.8099C22.3772 25.9886 22.2539 26.1478 22.103 26.278C21.9828 26.3921 21.836 26.4746 21.676 26.518C21.796 26.504 21.911 26.4883 22.021 26.471C22.932 26.326 23.697 25.838 24.397 25.309L26.205 23.944C26.5277 23.7098 26.9163 23.5837 27.315 23.5837C27.7137 23.5837 28.1023 23.7098 28.425 23.944C28.998 24.377 29.174 25.09 28.811 25.672C28.388 26.35 27.792 27.217 27.22 27.747C26.648 28.277 25.794 28.751 25.098 29.087C24.326 29.46 23.474 29.674 22.607 29.815C20.849 30.099 19.017 30.055 17.277 29.697C16.2843 29.4926 15.2735 29.3884 14.26 29.388Z"
+                    fill="#069CDF" />
+                  <path
+                    d="M14.586 10.586C14.219 10.953 14.082 11.459 14.031 12.25C14.6172 12.242 15.1771 12.0055 15.5916 11.5909C16.006 11.1762 16.2423 10.6162 16.25 10.03C15.46 10.082 14.953 10.219 14.586 10.586ZM25.414 10.586C25.047 10.219 24.541 10.082 23.75 10.031C23.7581 10.6172 23.9946 11.1771 24.4092 11.5916C24.8238 12.006 25.3838 12.2423 25.97 12.25C25.918 11.46 25.781 10.953 25.414 10.586ZM25.414 17.414C25.047 17.781 24.541 17.918 23.75 17.969C23.7581 17.3828 23.9946 16.8229 24.4092 16.4085C24.8238 15.994 25.3838 15.7578 25.97 15.75C25.918 16.54 25.781 17.047 25.414 17.414ZM14.586 17.414C14.953 17.781 15.459 17.918 16.25 17.969C16.242 17.3828 16.0055 16.8229 15.5909 16.4085C15.1762 15.994 14.6162 15.7578 14.03 15.75C14.082 16.54 14.219 17.047 14.586 17.414Z"
+                    fill="#069CDF" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14 13.75C14.9946 13.75 15.9484 13.3549 16.6517 12.6517C17.3549 11.9484 17.75 10.9946 17.75 10H22.25C22.25 10.9946 22.6451 11.9484 23.3483 12.6517C24.0516 13.3549 25.0054 13.75 26 13.75V14.25C25.0054 14.25 24.0516 14.6451 23.3483 15.3483C22.6451 16.0516 22.25 17.0054 22.25 18H17.75C17.75 17.0054 17.3549 16.0516 16.6517 15.3483C15.9484 14.6451 14.9946 14.25 14 14.25V13.75ZM20 15C20.2652 15 20.5196 14.8946 20.7071 14.7071C20.8946 14.5196 21 14.2652 21 14C21 13.7348 20.8946 13.4804 20.7071 13.2929C20.5196 13.1054 20.2652 13 20 13C19.7348 13 19.4804 13.1054 19.2929 13.2929C19.1054 13.4804 19 13.7348 19 14C19 14.2652 19.1054 14.5196 19.2929 14.7071C19.4804 14.8946 19.7348 15 20 15Z"
+                    fill="#069CDF" />
+                </svg>
+                <p>خرید قسطی</p>
+              </div>
+              <div
+                class="mb-6 p-3 rounded-[15px] bg-[#ADDBF0] flex items-center justify-center gap-2.5 text-xs text-primary">
+                <svg class="flex-shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.5"
+                    d="M2 6.94466C2 4.81266 2 3.74666 2.252 3.38799C2.50333 3.02999 3.50533 2.68666 5.51 2.00066L5.892 1.86999C6.93667 1.51199 7.45867 1.33333 8 1.33333C8.54133 1.33333 9.06333 1.51199 10.108 1.86999L10.49 2.00066C12.4947 2.68666 13.4967 3.02999 13.748 3.38799C14 3.74666 14 4.81333 14 6.94466V7.99399C14 11.7527 11.174 13.5773 9.40067 14.3513C8.92 14.5613 8.68 14.6667 8 14.6667C7.32 14.6667 7.08 14.5613 6.59933 14.3513C4.826 13.5767 2 11.7533 2 7.99399V6.94466Z"
+                    fill="#069CDF" />
+                  <path
+                    d="M7.99992 4.83333C8.13253 4.83333 8.2597 4.88601 8.35347 4.97977C8.44724 5.07354 8.49992 5.20072 8.49992 5.33333V7.99999C8.49992 8.1326 8.44724 8.25978 8.35347 8.35355C8.2597 8.44732 8.13253 8.49999 7.99992 8.49999C7.86731 8.49999 7.74013 8.44732 7.64637 8.35355C7.5526 8.25978 7.49992 8.1326 7.49992 7.99999V5.33333C7.49992 5.20072 7.5526 5.07354 7.64637 4.97977C7.74013 4.88601 7.86731 4.83333 7.99992 4.83333ZM7.99992 10.6667C8.17673 10.6667 8.3463 10.5964 8.47132 10.4714C8.59635 10.3464 8.66659 10.1768 8.66659 9.99999C8.66659 9.82318 8.59635 9.65361 8.47132 9.52859C8.3463 9.40357 8.17673 9.33333 7.99992 9.33333C7.82311 9.33333 7.65354 9.40357 7.52851 9.52859C7.40349 9.65361 7.33325 9.82318 7.33325 9.99999C7.33325 10.1768 7.40349 10.3464 7.52851 10.4714C7.65354 10.5964 7.82311 10.6667 7.99992 10.6667Z"
+                    fill="#069CDF" />
+                </svg>
+                <p>برای دسترسی به دوره و خرید اقاسطی حتما باید هزینه پیش پرداخت خرید قسطی را پرداخت کنید.</p>
+              </div>
+              <div class="grid sm:grid-cols-2 md:grid-cols-4 sm:gap-5 gap-3">
+                <div
+                  class="rounded-[15px] border border-[#00000026] transition text-center py-8 px-3 hover:bg-secondary group">
+                  <p class="text-sm text-black opacity-50 group-hover:text-white transition">مبلغ کل دوره</p>
+                  <p class="mt-1 font-bold text-primary group-hover:text-white transition">۲۰،۰۰۰،۰۰۰ تومان</p>
+                </div>
+                <div
+                  class="rounded-[15px] border border-[#00000026] transition text-center py-8 px-3 hover:bg-secondary group">
+                  <p class="text-sm text-black opacity-50 group-hover:text-white transition">مبلغ پیش پرداخت</p>
+                  <p class="mt-1 font-bold text-primary group-hover:text-white transition">۷،۵۰۰،۰۰۰ تومان</p>
+                </div>
+                <div
+                  class="rounded-[15px] border border-[#00000026] transition text-center py-8 px-3 hover:bg-secondary group">
+                  <p class="text-sm text-black opacity-50 group-hover:text-white transition">تعداد کل اقساط</p>
+                  <p class="mt-1 font-bold group-hover:text-white transition">۲۰</p>
+                </div>
+                <div
+                  class="rounded-[15px] border border-[#00000026] transition text-center py-8 px-3 hover:bg-secondary group">
+                  <p class="text-sm text-black opacity-50 group-hover:text-white transition">مبلغ هر قسط</p>
+                  <p class="mt-1 font-bold group-hover:text-white transition">۱،۴۵۰،۰۰۰ تومان</p>
+                </div>
+              </div>
+              <div class="mt-1">
+                <div
+                  class="grid grid-cols-3 gap-1 opacity-50 text-xs sm:text-base sm:p-5 py-4 px-3 border-b border-[#00000040]">
+                  <div>شماره</div>
+                  <div>مبلغ قسط</div>
+                  <div>تاریخ سررسید قسط</div>
+                </div>
+                <div>
+                  <div
+                    class="grid grid-cols-3 sm:p-5 py-4 px-3 gap-1 text-xs sm:text-sm font-bold rounded-[15px] even:bg-[#F5F6F8] text-black">
+                    <div>۱</div>
+                    <div>۳۵۰،۰۰۰ تومان</div>
+                    <div>۱ اردیبهشت ۱۴۰۳</div>
+                  </div>
+                  <div
+                    class="grid grid-cols-3 sm:p-5 py-4 px-3 gap-1 text-xs sm:text-sm font-bold rounded-[15px] even:bg-[#F5F6F8] text-black">
+                    <div>2</div>
+                    <div>۳۵۰،۰۰۰ تومان</div>
+                    <div>۱ اردیبهشت ۱۴۰۳</div>
+                  </div>
+                  <div
+                    class="grid grid-cols-3 sm:p-5 py-4 px-3 gap-1 text-xs sm:text-sm font-bold rounded-[15px] even:bg-[#F5F6F8] text-black">
+                    <div>3</div>
+                    <div>۳۵۰،۰۰۰ تومان</div>
+                    <div>۱ اردیبهشت ۱۴۰۳</div>
+                  </div>
+                  <div
+                    class="grid grid-cols-3 sm:p-5 py-4 px-3 gap-1 text-xs sm:text-sm font-bold rounded-[15px] even:bg-[#F5F6F8] text-black">
+                    <div>4</div>
+                    <div>۳۵۰،۰۰۰ تومان</div>
+                    <div>۱ اردیبهشت ۱۴۰۳</div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="mt-8 bg-primary text-sm sm:text-base flex items-center justify-center gap-2 rounded-[15px] h-[50px] text-white font-black">
+                <p>ادامه مراحل خرید قسطی</p>
+                <svg class="ltrReverse flex-shrink-0" width="17" height="12" viewBox="0 0 17 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.5"
+                    d="M15.5836 6.66296C15.7594 6.66296 15.9281 6.59311 16.0524 6.46878C16.1767 6.34445 16.2466 6.17583 16.2466 6C16.2466 5.82417 16.1767 5.65554 16.0524 5.53121C15.9281 5.40688 15.7594 5.33704 15.5836 5.33704V6.66296ZM15.5836 5.33704H1.44043V6.66296H15.5836V5.33704Z"
+                    fill="white"></path>
+                  <path d="M6.74412 0.696411L1.44043 6.0001L6.74412 11.3038" stroke="white" stroke-width="1.32592"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </form>
+        <button class="p-2 absolute close-button group left-4 ltr:left-auto ltr:right-4 top-5">
+          <svg class="w-3" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="group-hover:stroke-red-600 transition" d="M16 2L2 16M2 2L16 16" stroke="black"
               stroke-width="2.15385" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         </button>
@@ -199,7 +446,7 @@
           </a>
           <a
             class="flex-shrink-0 btnHover justify-between p-2 rounded-[30px] text-black text-sm font-black gap-2.5 hidden items-center ltr:pr-3 min-[1280px]:text-base py-1.5 relative rtl:pl-3 sm:flex">
-            <img alt="bg" src="../img/Rectangle 1.png" class="absolute inset-0 w-full h-16 -top-[1px]">
+            <img alt="bg" src="../img/Rectangle 1.png" class="absolute inset-0 w-full h-16 -top-[1px] ltrReverse">
             <div class="flex-center flex-shrink-0 bg-secondary h-10 rounded-full shadow-3 w-10">
               <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.5"
@@ -1270,7 +1517,7 @@
                     </div>
                   </div>
                   <img class="hidden md:block" alt="img" src="../img/solar_diploma-verified-bold-duotone.png">
-                  <a
+                  <a id="course-modal"
                     class="flex items-center justify-center gap-3 flex-shrink-0 px-8 mx-auto md:mx-0 md:px-14 h-12 md:h-[66px] bg-primary rounded-[40px] text-white font-black">
                     <p class="flex-shrink-0">خرید و ثبت نام در دوره</p>
                     <svg class="ltrReverse flex-shrink-0" width="17" height="12" viewBox="0 0 17 12" fill="none"
@@ -3231,7 +3478,7 @@
         </div>
         <div class="h-full w-full md:max-w-[243px] relative z-1">
           <div class="bg-white md:min-h-[340px] h-full p-6 px-3 sm:px-6 rounded-[15px] sm:rounded-[30px] pb-5 md:pb-[110px] relative">
-            <svg class="absolute ltr:md:left-auto ltr:md:-right-4 right-0 rotate-0 ltr:md:rotate-90 rtl:md:-left-4 rtl:md:right-auto left-0 rtl:md:-rotate-90 -top-[5px] mx-auto md:mx-0 md:top-[77px] z-10" width="44"
+            <svg class="absolute ltr:md:left-auto ltr:md:-right-4 right-0 rotate-0 ltr:md:rotate-90 rtl:md:-left-4 rtl:md:right-auto left-0 rtl:md:-rotate-90 -top-[6px] mx-auto md:mx-0 md:top-[77px] z-10" width="44"
               height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path class="fill-[#27679b] md:fill-[#0d5187]"
                 d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z"

@@ -3,9 +3,11 @@
 let tab = Array.from(document.querySelectorAll('.tab'));
 let tab2 = Array.from(document.querySelectorAll('.tab2'));
 let tab3 = Array.from(document.querySelectorAll('.tab3'));
+let tab4 = Array.from(document.querySelectorAll('.tab4'));
 let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
 let tabContent2 = Array.from(document.querySelectorAll('.tabContent2 > div'));
 let tabContent3 = Array.from(document.querySelectorAll('.tabContent3 > div'));
+let tabContent4 = Array.from(document.querySelectorAll('.tabContent4 > div'));
 
 tab.forEach((item) => {
   item.addEventListener('click', function() {
@@ -43,6 +45,23 @@ tab3.forEach((item) => {
       item.classList.add('active');
       let tabId = item.dataset.id;
       tabContent3.forEach((content) => {
+          let contentId = content.dataset.id;
+          if (tabId === contentId) {
+              content.classList.remove('hidden');
+              content.classList.add('grid');
+          } else {
+            content.classList.add('hidden');
+            content.classList.remove('grid');
+          }
+      })
+  })
+})
+tab4.forEach((item) => {
+  item.addEventListener('click', function() {
+    tab4.forEach((items) => {items.classList.remove('active')});
+      item.classList.add('active');
+      let tabId = item.dataset.id;
+      tabContent4.forEach((content) => {
           let contentId = content.dataset.id;
           if (tabId === contentId) {
               content.classList.remove('hidden');

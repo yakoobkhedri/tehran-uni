@@ -1213,6 +1213,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -1574,6 +1578,10 @@ video {
   height: 60px;
 }
 
+.h-\[68px\] {
+  height: 68px;
+}
+
 .h-\[73\%\] {
   height: 73%;
 }
@@ -1762,6 +1770,10 @@ video {
   width: 59px;
 }
 
+.w-\[68px\] {
+  width: 68px;
+}
+
 .w-\[90px\] {
   width: 90px;
 }
@@ -1784,6 +1796,10 @@ video {
 
 .max-w-\[246px\] {
   max-width: 246px;
+}
+
+.max-w-\[751px\] {
+  max-width: 751px;
 }
 
 .max-w-\[797px\] {
@@ -1875,6 +1891,10 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -2170,6 +2190,10 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .border-r-2 {
   border-right-width: 2px;
 }
@@ -2196,6 +2220,10 @@ video {
 
 .border-\[\#00000033\] {
   border-color: #00000033;
+}
+
+.border-\[\#00000040\] {
+  border-color: #00000040;
 }
 
 .border-\[\#0000004D\] {
@@ -3509,7 +3537,7 @@ header.active #headerarrow path{
   border: 1px solid #069CDF;
 }
 
-.tab2 svg path,.tab2 p{
+.tab2 svg path,.tab2 p,.tab4 p{
   transition: all .4s;
 }
 
@@ -3532,6 +3560,23 @@ header.active #headerarrow path{
 .tab3.active svg{
   opacity: 100%;
   visibility: visible;
+}
+
+.tab4.active{
+  background-color: #069CDF;
+}
+
+.tab4.active p{
+  color: white;
+  opacity: 100%;
+}
+
+.tab4.active > div{
+  background-color: #FFFFFF47;
+}
+
+.tab4.active svg path{
+  fill: white;
 }
 
 /* disabled button */
@@ -3795,9 +3840,19 @@ html[dir="rtl"] .data_imagesContLeftRight {
   border-top-right-radius: 20px;
 }
 
+.even\:bg-\[\#F5F6F8\]:nth-child(even) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 246 248 / var(--tw-bg-opacity));
+}
+
 .hover\:-translate-y-3:hover {
   --tw-translate-y: -0.75rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:bg-secondary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 77 139 / var(--tw-bg-opacity));
 }
 
 .hover\:font-black:hover {
@@ -3852,6 +3907,11 @@ html[dir="rtl"] .data_imagesContLeftRight {
 .group:hover .group-hover\:text-primary {
   --tw-text-opacity: 1;
   color: rgb(6 156 223 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:shadow-2xl {
@@ -4880,6 +4940,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     padding: 0.5rem;
   }
 
+  .sm\:p-5 {
+    padding: 1.25rem;
+  }
+
   .sm\:p-6 {
     padding: 1.5rem;
   }
@@ -5020,6 +5084,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
   .sm\:text-\[27px\] {
     font-size: 27px;
+  }
+
+  .sm\:text-\[28px\] {
+    font-size: 28px;
   }
 
   .sm\:text-\[30px\] {
@@ -5306,6 +5374,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -5670,6 +5742,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
   .lg\:gap-4 {
     gap: 1rem;
+  }
+
+  .lg\:gap-\[30px\] {
+    gap: 30px;
   }
 
   .lg\:gap-x-6 {
