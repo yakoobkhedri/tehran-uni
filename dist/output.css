@@ -1610,6 +1610,10 @@ video {
   height: 100%;
 }
 
+.h-\[46px\] {
+  height: 46px;
+}
+
 .min-h-\[315px\] {
   min-height: 315px;
 }
@@ -1780,6 +1784,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[46px\] {
+  width: 46px;
 }
 
 .max-w-\[1536px\] {
