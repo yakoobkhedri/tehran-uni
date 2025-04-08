@@ -13,9 +13,9 @@
 
   <div class="min-[1160px]:hidden" id="overlay"></div>
 
-  <!-- contact modal -->
-  <div class="modal">
-    <div style="visibility: hidden; opacity: 0;" data-button="contact-modal"
+    <!-- contact modal && reserve-modal -->
+    <div class="modal">
+      <div style="visibility: hidden; opacity: 0;" data-button="contact-modal"
       class="flex modal-container bg-black/60 justify-center backdrop-blur-sm fixed inset-0 items-center overflow-auto px-4 sm:px-7 transition-all z-[100]">
       <div
         class="flex flex-col modal-content bg-white justify-center p-7 rounded-[27px] w-full gap-7 items-center max-w-[797px] md:flex-row md:gap-14 md:h-[354px] md:justify-start md:p-5 pb-11 relative">
@@ -101,8 +101,250 @@
           </svg>
         </button>
       </div>
+      </div>
+      <div style="visibility: hidden; opacity: 0;" data-button="reserve-modal"
+    class="modal-container lg:flex justify-center items-center bg-black/60 backdrop-blur-sm fixed inset-0 pt-8 overflow-auto px-4 sm:px-7 transition-all z-[100]">
+    <div class="bg-white mb-8 modal-content py-7 sm:px-6 px-3 rounded-[15px] w-full max-w-[1392px] mx-auto relative">
+      <div class="flex items-center gap-2">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.5" d="M4.727 2.733C5.033 2.425 5.461 2.225 6.271 2.115C7.105 2.002 8.209 2 9.793 2H14.207C15.791 2 16.895 2.002 17.729 2.115C18.539 2.225 18.967 2.425 19.273 2.733C19.578 3.041 19.777 3.473 19.886 4.29C19.998 5.13 20 6.245 20 7.842V18H7.426C6.342 18 5.964 18.006 5.673 18.068C5.16 18.178 4.713 18.415 4.388 18.735C4.278 18.843 4.224 18.896 4.097 19.24C4.03698 19.3862 4.00411 19.542 4 19.7V7.842C4 6.245 4.002 5.131 4.114 4.29C4.223 3.474 4.422 3.041 4.727 2.733Z" fill="#069CDF"></path>
+          <path d="M20 18H7.42598C6.34198 18 5.96398 18.006 5.67298 18.068C5.15998 18.178 4.71298 18.415 4.38798 18.735C4.27798 18.843 4.22398 18.896 4.09698 19.24C3.96998 19.584 3.98998 19.729 4.03098 20.02L4.05298 20.17C4.16298 20.823 4.36298 21.168 4.66898 21.414C4.97598 21.66 5.40598 21.821 6.21898 21.908C7.05598 21.998 8.16498 22 9.75498 22H14.185C15.775 22 16.885 21.999 17.721 21.908C18.534 21.821 18.964 21.66 19.271 21.414C19.471 21.254 19.625 21.052 19.738 20.75H7.99998C7.80107 20.75 7.6103 20.671 7.46965 20.5303C7.329 20.3897 7.24998 20.1989 7.24998 20C7.24998 19.8011 7.329 19.6103 7.46965 19.4697C7.6103 19.329 7.80107 19.25 7.99998 19.25H19.975C19.993 18.887 19.998 18.474 20 18ZM7.24998 7C7.24998 6.80109 7.329 6.61032 7.46965 6.46967C7.6103 6.32902 7.80107 6.25 7.99998 6.25H16C16.1989 6.25 16.3897 6.32902 16.5303 6.46967C16.671 6.61032 16.75 6.80109 16.75 7C16.75 7.19891 16.671 7.38968 16.5303 7.53033C16.3897 7.67098 16.1989 7.75 16 7.75H7.99998C7.80107 7.75 7.6103 7.67098 7.46965 7.53033C7.329 7.38968 7.24998 7.19891 7.24998 7ZM7.99998 9.75C7.80107 9.75 7.6103 9.82902 7.46965 9.96967C7.329 10.1103 7.24998 10.3011 7.24998 10.5C7.24998 10.6989 7.329 10.8897 7.46965 11.0303C7.6103 11.171 7.80107 11.25 7.99998 11.25H13C13.1989 11.25 13.3897 11.171 13.5303 11.0303C13.671 10.8897 13.75 10.6989 13.75 10.5C13.75 10.3011 13.671 10.1103 13.5303 9.96967C13.3897 9.82902 13.1989 9.75 13 9.75H7.99998Z" fill="#069CDF"></path>
+        </svg>
+        <p class="text-lg text-black">
+          <span class="font-bold">رزرو</span> وقت مشاوره
+        </p>
+      </div>
+      <img alt="line" src="../img/Shape (7).png" class="block mt-3">
+      <form class="mt-7 relative">
+        <div class="lg:mt-3 mt-11 grid md:grid-cols-2 lg:grid-cols-3 xl:gap-7 gap-4">
+          <div>
+            <label class="font-bold text-sm text-black">نام و نام خانوادگی</label>
+            <div class="mt-1.5 relative bg-white p-2 flex items-center gap-1.5">
+              <img alt="img" src="../img/Rectangle 134.png" class="absolute inset-0 w-full h-full ltrReverse">
+              <div class="relative w-[29px] h-[29px] rounded-[6px] bg-[#F4F4F4] flex-center flex-shrink-0 shadow-17">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.5" d="M16.6008 9.7999C16.6008 13.8869 13.2878 17.1999 9.20078 17.1999C5.11376 17.1999 1.80078 13.8869 1.80078 9.7999C1.80078 5.71288 5.11376 2.3999 9.20078 2.3999C13.2878 2.3999 16.6008 5.71288 16.6008 9.7999Z" fill="#069CDF"></path>
+                  <path d="M12.7571 14.988C11.7106 15.7076 10.47 16.0919 9.19997 16.0899C7.92993 16.0919 6.6893 15.7076 5.64279 14.988C5.19583 14.6809 5.00491 14.0963 5.26539 13.6205C5.80337 12.6341 6.91337 12.0199 9.19997 12.0199C11.4866 12.0199 12.5966 12.6341 13.1353 13.6205C13.3943 14.0963 13.2041 14.6809 12.7571 14.988ZM9.19997 9.79986C9.78875 9.79986 10.3534 9.56597 10.7697 9.14964C11.1861 8.73331 11.42 8.16864 11.42 7.57986C11.42 6.99108 11.1861 6.42642 10.7697 6.01009C10.3534 5.59376 9.78875 5.35986 9.19997 5.35986C8.61119 5.35986 8.04652 5.59376 7.63019 6.01009C7.21386 6.42642 6.97997 6.99108 6.97997 7.57986C6.97997 8.16864 7.21386 8.73331 7.63019 9.14964C8.04652 9.56597 8.61119 9.79986 9.19997 9.79986Z" fill="#069CDF"></path>
+                  </svg>
+              </div>
+              <svg class="relative" width="1" height="36" viewBox="0 0 1 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line opacity="0.3" x1="0.247525" y1="-3.24589e-08" x2="0.247529" y2="36" stroke="black" stroke-width="0.495049" stroke-dasharray="2.48 2.48"></line>
+                </svg>
+                <input placeholder="نام و نام خانوادگی خود را وارد کنید" class="text-xs flex-grow px-2 w-full bg-transparent outline-none relative">
+            </div>
+          </div>
+          <div>
+            <label class="font-bold text-sm text-black">شماره تماس</label>
+            <div class="mt-1.5 relative bg-white p-2 flex items-center gap-1.5">
+              <img alt="img" src="../img/Rectangle 134.png" class="absolute inset-0 w-full h-full ltrReverse">
+              <div class="relative w-[29px] h-[29px] rounded-[6px] bg-[#F4F4F4] flex-center flex-shrink-0 shadow-17">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.5" d="M16.6008 9.7999C16.6008 13.8869 13.2878 17.1999 9.20078 17.1999C5.11376 17.1999 1.80078 13.8869 1.80078 9.7999C1.80078 5.71288 5.11376 2.3999 9.20078 2.3999C13.2878 2.3999 16.6008 5.71288 16.6008 9.7999Z" fill="#069CDF"></path>
+                  <path d="M12.7571 14.988C11.7106 15.7076 10.47 16.0919 9.19997 16.0899C7.92993 16.0919 6.6893 15.7076 5.64279 14.988C5.19583 14.6809 5.00491 14.0963 5.26539 13.6205C5.80337 12.6341 6.91337 12.0199 9.19997 12.0199C11.4866 12.0199 12.5966 12.6341 13.1353 13.6205C13.3943 14.0963 13.2041 14.6809 12.7571 14.988ZM9.19997 9.79986C9.78875 9.79986 10.3534 9.56597 10.7697 9.14964C11.1861 8.73331 11.42 8.16864 11.42 7.57986C11.42 6.99108 11.1861 6.42642 10.7697 6.01009C10.3534 5.59376 9.78875 5.35986 9.19997 5.35986C8.61119 5.35986 8.04652 5.59376 7.63019 6.01009C7.21386 6.42642 6.97997 6.99108 6.97997 7.57986C6.97997 8.16864 7.21386 8.73331 7.63019 9.14964C8.04652 9.56597 8.61119 9.79986 9.19997 9.79986Z" fill="#069CDF"></path>
+                  </svg>
+              </div>
+              <svg class="relative" width="1" height="36" viewBox="0 0 1 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line opacity="0.3" x1="0.247525" y1="-3.24589e-08" x2="0.247529" y2="36" stroke="black" stroke-width="0.495049" stroke-dasharray="2.48 2.48"></line>
+                </svg>
+                <input placeholder="شماره تماس خود را وارد کنید" class="text-xs flex-grow px-2 w-full bg-transparent outline-none relative">
+            </div>
+          </div>
+          <div>
+            <label class="font-bold text-sm text-black">تلفن ثابت</label>
+            <div class="mt-1.5 relative bg-white p-2 flex items-center gap-1.5">
+              <img alt="img" src="../img/Rectangle 134.png" class="absolute inset-0 w-full h-full ltrReverse">
+              <div class="relative w-[29px] h-[29px] rounded-[6px] bg-[#F4F4F4] flex-center flex-shrink-0 shadow-17">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.5" d="M16.6008 9.7999C16.6008 13.8869 13.2878 17.1999 9.20078 17.1999C5.11376 17.1999 1.80078 13.8869 1.80078 9.7999C1.80078 5.71288 5.11376 2.3999 9.20078 2.3999C13.2878 2.3999 16.6008 5.71288 16.6008 9.7999Z" fill="#069CDF"></path>
+                  <path d="M12.7571 14.988C11.7106 15.7076 10.47 16.0919 9.19997 16.0899C7.92993 16.0919 6.6893 15.7076 5.64279 14.988C5.19583 14.6809 5.00491 14.0963 5.26539 13.6205C5.80337 12.6341 6.91337 12.0199 9.19997 12.0199C11.4866 12.0199 12.5966 12.6341 13.1353 13.6205C13.3943 14.0963 13.2041 14.6809 12.7571 14.988ZM9.19997 9.79986C9.78875 9.79986 10.3534 9.56597 10.7697 9.14964C11.1861 8.73331 11.42 8.16864 11.42 7.57986C11.42 6.99108 11.1861 6.42642 10.7697 6.01009C10.3534 5.59376 9.78875 5.35986 9.19997 5.35986C8.61119 5.35986 8.04652 5.59376 7.63019 6.01009C7.21386 6.42642 6.97997 6.99108 6.97997 7.57986C6.97997 8.16864 7.21386 8.73331 7.63019 9.14964C8.04652 9.56597 8.61119 9.79986 9.19997 9.79986Z" fill="#069CDF"></path>
+                  </svg>
+              </div>
+              <svg class="relative" width="1" height="36" viewBox="0 0 1 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line opacity="0.3" x1="0.247525" y1="-3.24589e-08" x2="0.247529" y2="36" stroke="black" stroke-width="0.495049" stroke-dasharray="2.48 2.48"></line>
+                </svg>
+                <input placeholder="شماره تلفن ثابت خود را وارد کنید" class="text-xs flex-grow px-2 w-full bg-transparent outline-none relative">
+            </div>
+          </div>
+          <div>
+            <label class="font-bold text-sm text-black">ایمیل</label>
+            <div class="mt-1.5 relative bg-white p-2 flex items-center gap-1.5">
+              <img alt="img" src="../img/Rectangle 134.png" class="absolute inset-0 w-full h-full ltrReverse">
+              <div class="relative w-[29px] h-[29px] rounded-[6px] bg-[#F4F4F4] flex-center flex-shrink-0 shadow-17">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.5" d="M16.6008 9.7999C16.6008 13.8869 13.2878 17.1999 9.20078 17.1999C5.11376 17.1999 1.80078 13.8869 1.80078 9.7999C1.80078 5.71288 5.11376 2.3999 9.20078 2.3999C13.2878 2.3999 16.6008 5.71288 16.6008 9.7999Z" fill="#069CDF"></path>
+                  <path d="M12.7571 14.988C11.7106 15.7076 10.47 16.0919 9.19997 16.0899C7.92993 16.0919 6.6893 15.7076 5.64279 14.988C5.19583 14.6809 5.00491 14.0963 5.26539 13.6205C5.80337 12.6341 6.91337 12.0199 9.19997 12.0199C11.4866 12.0199 12.5966 12.6341 13.1353 13.6205C13.3943 14.0963 13.2041 14.6809 12.7571 14.988ZM9.19997 9.79986C9.78875 9.79986 10.3534 9.56597 10.7697 9.14964C11.1861 8.73331 11.42 8.16864 11.42 7.57986C11.42 6.99108 11.1861 6.42642 10.7697 6.01009C10.3534 5.59376 9.78875 5.35986 9.19997 5.35986C8.61119 5.35986 8.04652 5.59376 7.63019 6.01009C7.21386 6.42642 6.97997 6.99108 6.97997 7.57986C6.97997 8.16864 7.21386 8.73331 7.63019 9.14964C8.04652 9.56597 8.61119 9.79986 9.19997 9.79986Z" fill="#069CDF"></path>
+                  </svg>
+              </div>
+              <svg class="relative" width="1" height="36" viewBox="0 0 1 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line opacity="0.3" x1="0.247525" y1="-3.24589e-08" x2="0.247529" y2="36" stroke="black" stroke-width="0.495049" stroke-dasharray="2.48 2.48"></line>
+                </svg>
+                <input placeholder="آدرس ایمیل خود را وارد کنید" class="text-xs flex-grow px-2 w-full bg-transparent outline-none relative">
+            </div>
+          </div>
+          <div>
+            <label class="font-bold text-sm text-black">استان</label>
+            <div class="mt-1.5 relative bg-white p-2 flex items-center gap-1.5">
+              <img alt="img" src="../img/Rectangle 134.png" class="absolute inset-0 w-full h-full ltrReverse">
+              <div class="relative w-[29px] h-[29px] rounded-[6px] bg-[#F4F4F4] flex-center flex-shrink-0 shadow-17">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.5" d="M16.6008 9.7999C16.6008 13.8869 13.2878 17.1999 9.20078 17.1999C5.11376 17.1999 1.80078 13.8869 1.80078 9.7999C1.80078 5.71288 5.11376 2.3999 9.20078 2.3999C13.2878 2.3999 16.6008 5.71288 16.6008 9.7999Z" fill="#069CDF"></path>
+                  <path d="M12.7571 14.988C11.7106 15.7076 10.47 16.0919 9.19997 16.0899C7.92993 16.0919 6.6893 15.7076 5.64279 14.988C5.19583 14.6809 5.00491 14.0963 5.26539 13.6205C5.80337 12.6341 6.91337 12.0199 9.19997 12.0199C11.4866 12.0199 12.5966 12.6341 13.1353 13.6205C13.3943 14.0963 13.2041 14.6809 12.7571 14.988ZM9.19997 9.79986C9.78875 9.79986 10.3534 9.56597 10.7697 9.14964C11.1861 8.73331 11.42 8.16864 11.42 7.57986C11.42 6.99108 11.1861 6.42642 10.7697 6.01009C10.3534 5.59376 9.78875 5.35986 9.19997 5.35986C8.61119 5.35986 8.04652 5.59376 7.63019 6.01009C7.21386 6.42642 6.97997 6.99108 6.97997 7.57986C6.97997 8.16864 7.21386 8.73331 7.63019 9.14964C8.04652 9.56597 8.61119 9.79986 9.19997 9.79986Z" fill="#069CDF"></path>
+                  </svg>
+              </div>
+              <svg class="relative" width="1" height="36" viewBox="0 0 1 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line opacity="0.3" x1="0.247525" y1="-3.24589e-08" x2="0.247529" y2="36" stroke="black" stroke-width="0.495049" stroke-dasharray="2.48 2.48"></line>
+                </svg>
+                <select class="text-xs flex-grow px-2 w-full bg-transparent outline-none relative">
+                  <option>
+                    استان محل سکونت خود را انتخاب کنید
+                  </option>
+                  <option>
+                    تهران
+                  </option>
+                  <option>
+                    اهواز
+                  </option>
+                </select>
+            </div>
+          </div>
+          <div>
+            <label class="font-bold text-sm text-black">شهر</label>
+            <div class="mt-1.5 relative bg-white p-2 flex items-center gap-1.5">
+              <img alt="img" src="../img/Rectangle 134.png" class="absolute inset-0 w-full h-full ltrReverse">
+              <div class="relative w-[29px] h-[29px] rounded-[6px] bg-[#F4F4F4] flex-center flex-shrink-0 shadow-17">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.5" d="M16.6008 9.7999C16.6008 13.8869 13.2878 17.1999 9.20078 17.1999C5.11376 17.1999 1.80078 13.8869 1.80078 9.7999C1.80078 5.71288 5.11376 2.3999 9.20078 2.3999C13.2878 2.3999 16.6008 5.71288 16.6008 9.7999Z" fill="#069CDF"></path>
+                  <path d="M12.7571 14.988C11.7106 15.7076 10.47 16.0919 9.19997 16.0899C7.92993 16.0919 6.6893 15.7076 5.64279 14.988C5.19583 14.6809 5.00491 14.0963 5.26539 13.6205C5.80337 12.6341 6.91337 12.0199 9.19997 12.0199C11.4866 12.0199 12.5966 12.6341 13.1353 13.6205C13.3943 14.0963 13.2041 14.6809 12.7571 14.988ZM9.19997 9.79986C9.78875 9.79986 10.3534 9.56597 10.7697 9.14964C11.1861 8.73331 11.42 8.16864 11.42 7.57986C11.42 6.99108 11.1861 6.42642 10.7697 6.01009C10.3534 5.59376 9.78875 5.35986 9.19997 5.35986C8.61119 5.35986 8.04652 5.59376 7.63019 6.01009C7.21386 6.42642 6.97997 6.99108 6.97997 7.57986C6.97997 8.16864 7.21386 8.73331 7.63019 9.14964C8.04652 9.56597 8.61119 9.79986 9.19997 9.79986Z" fill="#069CDF"></path>
+                  </svg>
+              </div>
+              <svg class="relative" width="1" height="36" viewBox="0 0 1 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line opacity="0.3" x1="0.247525" y1="-3.24589e-08" x2="0.247529" y2="36" stroke="black" stroke-width="0.495049" stroke-dasharray="2.48 2.48"></line>
+                </svg>
+                <select class="text-xs flex-grow px-2 w-full bg-transparent outline-none relative">
+                  <option>
+                    شهر محل سکونت خود را انتخاب کنید
+                  </option>
+                  <option>
+                    تهران
+                  </option>
+                  <option>
+                    اهواز
+                  </option>
+                </select>
+            </div>
+          </div>
+          <div>
+            <label class="font-bold text-sm text-black">عنوان شغل</label>
+            <div class="mt-1.5 relative bg-white p-2 flex items-center gap-1.5">
+              <img alt="img" src="../img/Rectangle 134.png" class="absolute inset-0 w-full h-full ltrReverse">
+              <div class="relative w-[29px] h-[29px] rounded-[6px] bg-[#F4F4F4] flex-center flex-shrink-0 shadow-17">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.5" d="M16.6008 9.7999C16.6008 13.8869 13.2878 17.1999 9.20078 17.1999C5.11376 17.1999 1.80078 13.8869 1.80078 9.7999C1.80078 5.71288 5.11376 2.3999 9.20078 2.3999C13.2878 2.3999 16.6008 5.71288 16.6008 9.7999Z" fill="#069CDF"></path>
+                  <path d="M12.7571 14.988C11.7106 15.7076 10.47 16.0919 9.19997 16.0899C7.92993 16.0919 6.6893 15.7076 5.64279 14.988C5.19583 14.6809 5.00491 14.0963 5.26539 13.6205C5.80337 12.6341 6.91337 12.0199 9.19997 12.0199C11.4866 12.0199 12.5966 12.6341 13.1353 13.6205C13.3943 14.0963 13.2041 14.6809 12.7571 14.988ZM9.19997 9.79986C9.78875 9.79986 10.3534 9.56597 10.7697 9.14964C11.1861 8.73331 11.42 8.16864 11.42 7.57986C11.42 6.99108 11.1861 6.42642 10.7697 6.01009C10.3534 5.59376 9.78875 5.35986 9.19997 5.35986C8.61119 5.35986 8.04652 5.59376 7.63019 6.01009C7.21386 6.42642 6.97997 6.99108 6.97997 7.57986C6.97997 8.16864 7.21386 8.73331 7.63019 9.14964C8.04652 9.56597 8.61119 9.79986 9.19997 9.79986Z" fill="#069CDF"></path>
+                  </svg>
+              </div>
+              <svg class="relative" width="1" height="36" viewBox="0 0 1 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line opacity="0.3" x1="0.247525" y1="-3.24589e-08" x2="0.247529" y2="36" stroke="black" stroke-width="0.495049" stroke-dasharray="2.48 2.48"></line>
+                </svg>
+                <input placeholder="شفل خود را وارد کنید" class="text-xs flex-grow px-2 w-full bg-transparent outline-none relative">
+            </div>
+          </div>
+          <div>
+            <label class="font-bold text-sm text-black">آخرین مدرک تحصیلی</label>
+            <div class="mt-1.5 relative bg-white p-2 flex items-center gap-1.5">
+              <img alt="img" src="../img/Rectangle 134.png" class="absolute inset-0 w-full h-full ltrReverse">
+              <div class="relative w-[29px] h-[29px] rounded-[6px] bg-[#F4F4F4] flex-center flex-shrink-0 shadow-17">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.5" d="M16.6008 9.7999C16.6008 13.8869 13.2878 17.1999 9.20078 17.1999C5.11376 17.1999 1.80078 13.8869 1.80078 9.7999C1.80078 5.71288 5.11376 2.3999 9.20078 2.3999C13.2878 2.3999 16.6008 5.71288 16.6008 9.7999Z" fill="#069CDF"></path>
+                  <path d="M12.7571 14.988C11.7106 15.7076 10.47 16.0919 9.19997 16.0899C7.92993 16.0919 6.6893 15.7076 5.64279 14.988C5.19583 14.6809 5.00491 14.0963 5.26539 13.6205C5.80337 12.6341 6.91337 12.0199 9.19997 12.0199C11.4866 12.0199 12.5966 12.6341 13.1353 13.6205C13.3943 14.0963 13.2041 14.6809 12.7571 14.988ZM9.19997 9.79986C9.78875 9.79986 10.3534 9.56597 10.7697 9.14964C11.1861 8.73331 11.42 8.16864 11.42 7.57986C11.42 6.99108 11.1861 6.42642 10.7697 6.01009C10.3534 5.59376 9.78875 5.35986 9.19997 5.35986C8.61119 5.35986 8.04652 5.59376 7.63019 6.01009C7.21386 6.42642 6.97997 6.99108 6.97997 7.57986C6.97997 8.16864 7.21386 8.73331 7.63019 9.14964C8.04652 9.56597 8.61119 9.79986 9.19997 9.79986Z" fill="#069CDF"></path>
+                  </svg>
+              </div>
+              <svg class="relative" width="1" height="36" viewBox="0 0 1 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line opacity="0.3" x1="0.247525" y1="-3.24589e-08" x2="0.247529" y2="36" stroke="black" stroke-width="0.495049" stroke-dasharray="2.48 2.48"></line>
+                </svg>
+                <select class="text-xs flex-grow px-2 w-full bg-transparent outline-none relative">
+                  <option>
+                    آخرین مدرک تحصیلی خود را وارد کنید
+                  </option>
+                  <option>
+                    تهران
+                  </option>
+                  <option>
+                    اهواز
+                  </option>
+                </select>
+            </div>
+          </div>
+          <div>
+            <label class="font-bold text-sm text-black">نوع مشاوره</label>
+            <div class="mt-5 flex items-center gap-[10px] flex-wrap">
+              <label class="cursor-pointer">
+                <div class="inline-flex items-center gap-[5px]">
+                  <label class="relative flex items-center p-1 rounded-full cursor-pointer" htmlfor="black">
+                    <input name="type" type="checkbox" class="before:content[''] bg-white border-2 border-[#0000001A] peer relative h-4 w-4 cursor-pointer appearance-none overflow-hidden rounded-[2px] text-[#ECECEC] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-[#ECECEC] before:opacity-0 before:transition-opacity checked:border-orange checked:before:bg-orange hover:before:opacity-10" id="black">
+                    <span class="absolute text-primary transition-opacity opacity-0 pointer-events-none rounded-[5px] top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                      <div class="w-4 h-4 rounded-[2px] bg-primary relative">
+                        <svg class="absolute inset-0 m-auto" width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 3.50012L4 6.50012L9.00024 1.5" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                          </svg>
+                      </div>
+                    </span>
+                  </label>
+                  <p class="text-xs text-black">
+                    دوره های MBA</p>
+                </div>
+              </label>
+              <label class="cursor-pointer">
+                <div class="inline-flex items-center gap-[5px]">
+                  <label class="relative flex items-center p-1 rounded-full cursor-pointer" htmlfor="black">
+                    <input name="type" type="checkbox" class="before:content[''] bg-white border-2 border-[#0000001A] peer relative h-4 w-4 cursor-pointer appearance-none overflow-hidden rounded-[2px] text-[#ECECEC] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-[#ECECEC] before:opacity-0 before:transition-opacity checked:border-orange checked:before:bg-orange hover:before:opacity-10" id="black">
+                    <span class="absolute text-primary transition-opacity opacity-0 pointer-events-none rounded-[5px] top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                      <div class="w-4 h-4 rounded-[2px] bg-primary relative">
+                        <svg class="absolute inset-0 m-auto" width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 3.50012L4 6.50012L9.00024 1.5" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                          </svg>
+                      </div>
+                    </span>
+                  </label>
+                  <p class="text-xs text-black">
+                    دوره های DBA</p>
+                </div>
+              </label>
+              <label class="cursor-pointer">
+                <div class="inline-flex items-center gap-[5px]">
+                  <label class="relative flex items-center p-1 rounded-full cursor-pointer" htmlfor="black">
+                    <input name="type" type="checkbox" class="before:content[''] bg-white border-2 border-[#0000001A] peer relative h-4 w-4 cursor-pointer appearance-none overflow-hidden rounded-[2px] text-[#ECECEC] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-[#ECECEC] before:opacity-0 before:transition-opacity checked:border-orange checked:before:bg-orange hover:before:opacity-10" id="black">
+                    <span class="absolute text-primary transition-opacity opacity-0 pointer-events-none rounded-[5px] top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                      <div class="w-4 h-4 rounded-[2px] bg-primary relative">
+                        <svg class="absolute inset-0 m-auto" width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 3.50012L4 6.50012L9.00024 1.5" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                          </svg>
+                      </div>
+                    </span>
+                  </label>
+                  <p class="text-xs text-black">
+                    دوره های سازمانی</p>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <button class="flex items-center sm:text-base text-sm w-full h-12 sm:h-[52px] mt-7 justify-center gap-[10px] bg-primary rounded-[30px] text-white font-black">
+          <p>ثبت درخواست مشاوره</p>
+          <svg class="ltrReverse flex-shrink-0" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.5" d="M18.1656 11.359C18.3415 11.359 18.5101 11.2892 18.6344 11.1648C18.7587 11.0405 18.8286 10.8719 18.8286 10.696C18.8286 10.5202 18.7587 10.3516 18.6344 10.2273C18.5101 10.1029 18.3415 10.0331 18.1656 10.0331V11.359ZM18.1656 10.0331H4.02246V11.359H18.1656V10.0331Z" fill="white"></path>
+            <path d="M9.32615 5.39243L4.02246 10.6961L9.32615 15.9998" stroke="white" stroke-width="1.32592" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+      </form>
+      <button class="p-2 absolute close-button group left-4 ltr:left-auto ltr:right-4 top-5">
+        <svg class="w-3" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="group-hover:stroke-red-600 transition" d="M16 2L2 16M2 2L16 16" stroke="black" stroke-width="2.15385" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </button>
     </div>
-  </div>
+      </div>
+    </div>
 
   <!-- contact icon -->
   <div

@@ -838,10 +838,6 @@ video {
   top: -7px;
 }
 
-.-top-full {
-  top: -100%;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -864,10 +860,6 @@ video {
 
 .bottom-\[34px\] {
   bottom: 34px;
-}
-
-.bottom-auto {
-  bottom: auto;
 }
 
 .left-0 {
@@ -1618,10 +1610,6 @@ video {
   min-height: 40px;
 }
 
-.min-h-full {
-  min-height: 100%;
-}
-
 .\!w-11 {
   width: 2.75rem !important;
 }
@@ -1816,6 +1804,10 @@ video {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[1392px\] {
+  max-width: 1392px;
 }
 
 .flex-shrink-0 {
@@ -2080,6 +2072,10 @@ video {
   border-radius: 30px;
 }
 
+.rounded-\[35px\] {
+  border-radius: 35px;
+}
+
 .rounded-\[40px\] {
   border-radius: 40px;
 }
@@ -2114,10 +2110,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-\[35px\] {
-  border-radius: 35px;
 }
 
 .rounded-b-2xl {
@@ -2559,11 +2551,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-\[109px\] {
-  padding-top: 109px;
-  padding-bottom: 109px;
-}
-
 .py-\[14px\] {
   padding-top: 14px;
   padding-bottom: 14px;
@@ -2572,16 +2559,6 @@ video {
 .py-\[18px\] {
   padding-top: 18px;
   padding-bottom: 18px;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.py-9 {
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
 }
 
 .pb-0 {
@@ -3892,40 +3869,12 @@ html[dir="rtl"] .data_imagesContLeftRight {
   background-color: rgb(0 77 139 / var(--tw-bg-opacity));
 }
 
-.group:hover .group-hover\:top-0 {
-  top: 0px;
-}
-
 .group:hover .group-hover\:bottom-0 {
   bottom: 0px;
 }
 
-.group:hover .group-hover\:-bottom-5 {
-  bottom: -1.25rem;
-}
-
-.group:hover .group-hover\:-bottom-9 {
-  bottom: -2.25rem;
-}
-
-.group:hover .group-hover\:-bottom-10 {
-  bottom: -2.5rem;
-}
-
-.group:hover .group-hover\:-bottom-14 {
-  bottom: -3.5rem;
-}
-
-.group:hover .group-hover\:-bottom-12 {
-  bottom: -3rem;
-}
-
 .group:hover .group-hover\:max-h-\[60px\] {
   max-height: 60px;
-}
-
-.group:hover .group-hover\:min-h-\[40px\] {
-  min-height: 40px;
 }
 
 .group:hover .group-hover\:rounded-\[30px\] {
@@ -3953,11 +3902,6 @@ html[dir="rtl"] .data_imagesContLeftRight {
   stroke: #dc2626;
 }
 
-.group:hover .group-hover\:py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .group:hover .group-hover\:pb-\[128px\] {
   padding-bottom: 128px;
 }
@@ -3970,10 +3914,6 @@ html[dir="rtl"] .data_imagesContLeftRight {
 .group:hover .group-hover\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:opacity-0 {
-  opacity: 0;
 }
 
 .group:hover .group-hover\:shadow-2xl {
