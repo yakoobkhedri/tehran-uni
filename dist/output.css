@@ -4836,6 +4836,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     height: 61px;
   }
 
+  .sm\:h-\[146px\] {
+    height: 146px;
+  }
+
   .sm\:min-h-full {
     min-height: 100%;
   }
@@ -5009,6 +5013,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
   .sm\:border {
     border-width: 1px;
+  }
+
+  .sm\:border-0 {
+    border-width: 0px;
   }
 
   .sm\:bg-\[\#069adf30\] {
@@ -5264,6 +5272,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
     padding-left: 0.75rem;
   }
 
+  :is([dir="ltr"] .ltr\:sm\:pr-\[198px\]) {
+    padding-right: 198px;
+  }
+
   :is([dir="rtl"] .rtl\:sm\:-right-\[13px\]) {
     right: -13px;
   }
@@ -5294,6 +5306,10 @@ html[dir="rtl"] .data_imagesContLeftRight {
 
   :is([dir="rtl"] .rtl\:sm\:pr-3) {
     padding-right: 0.75rem;
+  }
+
+  :is([dir="rtl"] .rtl\:sm\:pl-\[198px\]) {
+    padding-left: 198px;
   }
 }
 

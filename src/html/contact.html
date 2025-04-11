@@ -1897,8 +1897,8 @@
             </div>
             <div class="col-span-12">
               <label class="font-bold text-sm text-black">موضوع پیام</label>
-              <div class="mt-1.5 bg-white p-2 pt-3 flex items-start gap-1.5 relative">
-                <img alt="img" src="../img/Rectangle 134 (3).png" class="absolute inset-0 w-full h-full ltrReverse">
+              <div class="mt-1.5 bg-white sm:border-0 border border-[#00000026] rounded-[15px] p-2 pt-3 flex items-start gap-1.5 relative">
+                <img alt="img" src="../img/Rectangle 134 (3).png" class="absolute hidden sm:block inset-0 w-full h-full ltrReverse">
                 <div class="relative w-[29px] h-[29px] rounded-[6px] bg-[#F4F4F4] flex-center flex-shrink-0 shadow-17">
                   <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.5" d="M16.6008 9.7999C16.6008 13.8869 13.2878 17.1999 9.20078 17.1999C5.11376 17.1999 1.80078 13.8869 1.80078 9.7999C1.80078 5.71288 5.11376 2.3999 9.20078 2.3999C13.2878 2.3999 16.6008 5.71288 16.6008 9.7999Z" fill="#069CDF"></path>
@@ -1908,8 +1908,8 @@
                 <svg class="relative" width="1" height="36" viewBox="0 0 1 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <line opacity="0.3" x1="0.247525" y1="-3.24589e-08" x2="0.247529" y2="36" stroke="black" stroke-width="0.495049" stroke-dasharray="2.48 2.48"></line>
                   </svg>
-                  <textarea class="rtl:pl-[198px] ltr:pr-[198px] resize-none h-[146px] text-xs flex-grow p-2 w-full bg-transparent outline-none relative" placeholder="پیام خود را وارد کنید"></textarea>
-                 <div class="rounded-xl absolute z-1 top-0 bottom-0 m-3 rtl:left-0 ltr:right-0 bg-[#0000000A] flex-center px-3 py-9 cursor-pointer">
+                  <textarea class="rtl:sm:pl-[198px] ltr:sm:pr-[198px] resize-none h-[200px] sm:h-[146px] text-xs flex-grow p-2 w-full bg-transparent outline-none relative" placeholder="پیام خود را وارد کنید"></textarea>
+                 <div class="rounded-xl hidden sm:flex absolute z-1 top-0 bottom-0 m-3 rtl:left-0 ltr:right-0 bg-[#0000000A] justify-center items-center px-3 py-9 cursor-pointer">
                     <input type="file" class="absolute inset-0 w-full h-full cursor-pointer opacity-0 z-3">
                   <div>
                       <svg class="mx-auto" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1921,6 +1921,18 @@
                       <p class="opacity-30 text-black text-center mt-3">فایل خود را انتخاب کنید</p>
                     </div>
                   </div>
+              </div>
+              <div class="rounded-xl relative flex sm:hidden mt-3 bg-[#0000000A] justify-center items-center px-3 py-9 cursor-pointer">
+                <input type="file" class="absolute inset-0 w-full h-full cursor-pointer opacity-0 z-3">
+              <div>
+                  <svg class="mx-auto" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.95675 1.50975C6.08117 0.540152 7.51527 0.00465583 9 0C12.0262 0 14.5384 2.25 14.8118 5.15137C16.6028 5.4045 18 6.90412 18 8.74463C18 10.7651 16.3148 12.375 14.2729 12.375H11.25C11.1008 12.375 10.9577 12.3157 10.8523 12.2102C10.7468 12.1048 10.6875 11.9617 10.6875 11.8125C10.6875 11.6633 10.7468 11.5202 10.8523 11.4148C10.9577 11.3093 11.1008 11.25 11.25 11.25H14.274C15.7264 11.25 16.875 10.1115 16.875 8.74463C16.875 7.37662 15.7275 6.23812 14.2729 6.23812H13.7104V5.67562C13.7115 3.17813 11.619 1.125 9 1.125C7.78486 1.12985 6.61145 1.56874 5.69137 2.3625C4.83975 3.096 4.39425 3.98025 4.39425 4.67438V5.17838L3.89363 5.2335C2.322 5.40562 1.125 6.696 1.125 8.23275C1.125 9.88313 2.50875 11.25 4.25362 11.25H6.75C6.89918 11.25 7.04226 11.3093 7.14775 11.4148C7.25324 11.5202 7.3125 11.6633 7.3125 11.8125C7.3125 11.9617 7.25324 12.1048 7.14775 12.2102C7.04226 12.3157 6.89918 12.375 6.75 12.375H4.25362C1.9215 12.375 0 10.5367 0 8.23275C0 6.24937 1.42425 4.60687 3.30975 4.19062C3.47062 3.21975 4.095 2.25225 4.95675 1.50975Z" fill="#404040"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.60246 4.66428C8.65471 4.6119 8.71678 4.57033 8.78512 4.54198C8.85346 4.51362 8.92672 4.49902 9.00071 4.49902C9.0747 4.49902 9.14796 4.51362 9.2163 4.54198C9.28464 4.57033 9.34671 4.6119 9.39896 4.66428L12.774 8.03928C12.8796 8.1449 12.9389 8.28816 12.9389 8.43753C12.9389 8.5869 12.8796 8.73016 12.774 8.83578C12.6683 8.9414 12.5251 9.00074 12.3757 9.00074C12.2263 9.00074 12.0831 8.9414 11.9775 8.83578L9.56321 6.4204V16.3125C9.56321 16.4617 9.50395 16.6048 9.39846 16.7103C9.29297 16.8158 9.1499 16.875 9.00071 16.875C8.85153 16.875 8.70845 16.8158 8.60296 16.7103C8.49747 16.6048 8.43821 16.4617 8.43821 16.3125V6.4204L6.02396 8.83578C5.91834 8.9414 5.77508 9.00074 5.62571 9.00074C5.47634 9.00074 5.33308 8.9414 5.22746 8.83578C5.12184 8.73016 5.0625 8.5869 5.0625 8.43753C5.0625 8.28816 5.12184 8.1449 5.22746 8.03928L8.60246 4.66428Z" fill="#404040"/>
+                    </g>
+                  </svg>
+                  <p class="opacity-30 text-black text-center mt-3">فایل خود را انتخاب کنید</p>
+                </div>
               </div>
             </div>
           </div>
