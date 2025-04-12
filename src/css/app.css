@@ -306,6 +306,31 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none; /* برای کروم و سافاری */
   margin: 0; /* حذف margin پیش‌فرض */
 }
+header ul > li:hover > a{
+  color: #069cdf;
+}
+/* submenu desktop */
+.menu1,.menu1 > div > div{
+  border-radius: 20px !important;
+}
+.menu1 > div > svg.ltrReverse2{
+  left: -33px !important;
+}
+.menu1 > div:hover > div,.menu1 > div:hover > svg.ltrReverse2 {
+  opacity: 100%;
+  visibility: visible;
+}
+.menu1 > div > div,.menu1 > div > svg.ltrReverse2 {
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s;
+}
+.menu1 > div > p,.menu1 > div > div a > p{
+  transition: all .4s;
+}
+.menu1 > div:hover > p,.menu1 > div > div a:hover > p{
+  color: #069cdf;
+}
 /* mobile menu */
 header.active{
   z-index: 99;
