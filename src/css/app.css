@@ -421,6 +421,80 @@ header.active #headerarrow path{
 .arrowShape.active{
   opacity: 100%;
 }
+
+/* editor */
+.editor-section {
+  font-family: YekanBakhFaNum-Regular!important;
+}
+.editor-section img{
+  border-radius: 18px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.editor-section table{
+  @apply overflow-hidden w-full ltr:text-left text-right;
+}
+.editor-section thead{
+   @apply text-black;
+}
+.editor-section th{
+  @apply !py-4 text-sm sm:text-base text-[#404040] font-extrabold border-b border-[#00000013];
+}
+.editor-section tbody{
+  /* @apply [&>*:nth-child(even)]:bg-white [&>*:nth-child(odd)]:bg-[#F8F8F8]; */
+}
+.editor-section tbody tr {
+  @apply text-xs text-[#404040];
+}
+.editor-section tbody tr td:first-child {
+  @apply text-[#069CDF] font-semibold opacity-100 text-sm;
+}
+.editor-section tbody td{
+  @apply py-5 opacity-60 border-dashed border-b border-[#00000020] leading-6;
+}
+.editor-section tbody tr:last-child td{
+  @apply !border-b-0;
+}
+.editor-section a{
+  background-color: #7e7eff;
+  opacity: 100%;
+  border-radius: 8px;
+  padding: 3px;
+  color: white;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+.editor-section ul{
+  font-weight: bold;
+  color: 404040;
+  position: relative;
+}
+.editor-section ul::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: #00000020;
+  right: 14px;
+}
+.editor-section ul li{
+  @apply relative flex items-center gap-2 p-3 rtl:pr-10 ltr:pl-10 last:mb-0 text-[#404040] font-semibold;
+}
+.editor-section ul li::before{
+  content: url('../src/img/Ellipse 29.PNG');
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  top:15px
+}
+.editor-section ul li::before{
+  @apply rtl:right-2 ltr:left-2
+}
+.editor-section ul li{
+  @apply text-sm sm:text-base text-[#2C2C2C];
+}
 /* tab */
 .tab:hover,.tab.active{
   background-color: white;
