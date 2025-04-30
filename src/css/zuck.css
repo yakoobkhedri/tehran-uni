@@ -58,6 +58,7 @@
     border-radius: 0;
     margin-top: 0 !important;
     margin-left: 0 !important;
+    direction: ltr;
   }
   #zuck-modal.with-effects.closed {
     transform: translateY(100%);
@@ -499,7 +500,7 @@
 
 /* Chrome, Edge and Safari */
 .stories.carousel::-webkit-scrollbar {
-  height: 10px;
+  height: 6px;
   width: 10px;
 }
 .stories.carousel::-webkit-scrollbar-track {
